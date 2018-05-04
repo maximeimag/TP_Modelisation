@@ -20,7 +20,6 @@ class WaveModel
 
     public:
         WaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust);
-        ~WaveModel();
 
         Dvector getWind() {return WindDirection;}
         double getAlignement() {return alignement;}
