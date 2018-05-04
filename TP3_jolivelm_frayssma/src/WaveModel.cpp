@@ -5,7 +5,6 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
-#include "Dvector.h"
 #include "WaveModel.h"
 using namespace std;
 
@@ -17,10 +16,6 @@ WaveModel::WaveModel(Dvector Wind, double align, double intensity, double longue
     this->intensite = intensity;
     this->longueur_onde = longueur;
     this->ajustement = ajust;
-}
-
-WaveModel::~WaveModel() {
-    std::cout << "free" << '\n';
 }
 
 void WaveModel::display(ostream &str) const {

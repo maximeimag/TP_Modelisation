@@ -5,7 +5,6 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
-#include "Dvector.h"
 #include "GerstnerWave.h"
 using namespace std;
 

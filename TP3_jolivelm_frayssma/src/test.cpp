@@ -6,9 +6,7 @@
 #include "test.h"
 #include "Dvector.h"
 #include "Height.h"
-#include "WaveModel.h"
-#include "GerstnerWave.h"
-//#include "GerstnerWaveModel.h"
+#include "GerstnerWaveModel.h"
 
 using namespace std;
 
@@ -29,7 +27,7 @@ int main () {
 
 	WaveModel w = WaveModel(v, val1, val2, val1, val2);
 
-	//GerstnerWaveModel Gw = GerstnerWaveModel(v, val1, val2, val1, val2, &wave, 1);
+	GerstnerWaveModel Gw = GerstnerWaveModel(v, val1, val2, val1, val2, &wave, 1);
     cout << "\n";
 	wave.display(cout);
     cout << "\n";
