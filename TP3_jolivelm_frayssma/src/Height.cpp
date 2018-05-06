@@ -19,6 +19,22 @@ Height::Height(double L_x, double L_y, int n_x, int n_y, double val_init) {
     this->datas = Dvector(n_x*n_y, val_init);
 }
 
+Height::Height(const Height &Hgt) {
+    L_x = Hgt.L_x;
+    L_y = Hgt.L_y;
+    n_x = Hgt.n_x;
+    n_y = Hgt.n_y;
+    datas = Dvector(Hgt.datas);
+}
+
+Height::Height() {
+    L_x = 1;
+    L_y = 1;
+    n_x = 2;
+    n_y = 1;
+    this->datas = Dvector(n_x*n_y);
+}
+
 Height::~Height() {
     //delete [] this->datas;
 }

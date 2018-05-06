@@ -25,9 +25,9 @@ int main () {
 
 	GerstnerWave wave = GerstnerWave(1.0, 1.0, 1.0, v);
 
-	WaveModel w = WaveModel(v, val1, val2, val1, val2);
+	WaveModel w = WaveModel(v, h1, val1, val2, val1, val2);
 
-	GerstnerWaveModel Gw = GerstnerWaveModel(v, val1, val2, val1, val2, &wave, 1);
+	GerstnerWaveModel Gw = GerstnerWaveModel(v, h1, val1, val2, val1, val2, &wave, 1);
     cout << "\n";
 	wave.display(cout);
     cout << "\n";

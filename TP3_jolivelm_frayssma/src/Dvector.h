@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <vector>
 using namespace std;
+
 #ifndef DVECTORH
 #define DVECTORH
 

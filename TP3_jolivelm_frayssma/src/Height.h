@@ -8,6 +8,9 @@
 #include "Dvector.h"
 using namespace std;
 
+#ifndef HEIGHTH
+#define HEIGHTH
+
 
 class Height
 {
@@ -19,7 +22,9 @@ class Height
         Dvector datas;
 
     public:
+        Height();
         Height(double L_x, double L_y, int n_x, int n_y, double val_init);
+        Height(const Height &Hgt);
         ~Height();
 
         double & operator()(int i, int j) const { return this->datas(i*n_x + j);}
@@ -34,3 +39,5 @@ class Height
         void display(ostream& str) const;
 
 };
+
+#endif

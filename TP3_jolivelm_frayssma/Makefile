@@ -4,7 +4,7 @@ BIN_DIR = bin
 
 
 PROG = $(BIN_DIR)/test
-OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  
+OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 
 CC = clang++
 CXXFLAGS = -Wall -g
@@ -16,6 +16,9 @@ CPPS = $(SRC_DIR)/Dvector.cpp $(SRC_DIR)/test.cpp
 all: $(PROG)
 
 recompile: clean $(PROG)
+
+$(OBJ_DIR)/PhilipsWaveModel.o: $(SRC_DIR)/PhilipsWaveModel.cpp
+	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/PhilipsWaveModel.cpp -o $(OBJ_DIR)/PhilipsWaveModel.o
 
 $(OBJ_DIR)/GerstnerWaveModel.o: $(SRC_DIR)/GerstnerWaveModel.cpp
 	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/GerstnerWaveModel.cpp -o $(OBJ_DIR)/GerstnerWaveModel.o

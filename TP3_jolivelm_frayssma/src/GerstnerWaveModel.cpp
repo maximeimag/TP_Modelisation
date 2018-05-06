@@ -4,12 +4,11 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
-#include "GerstnerWaveModel.h"
+#include "PhilipsWaveModel.h"
 using namespace std;
 
 
 
-GerstnerWaveModel::GerstnerWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, GerstnerWave * listeGerstner, size_t nb_wave):WaveModel(Wind, align, intensity, longueur, ajust) {
-    this->listeGerstner = listeGerstner;
-    this->nb_wave = nb_wave;
+PhilipsWaveModel::PhilipsWaveModel(Dvector Wind, Height HeightField, double align, double intensity, double longueur, double ajust, double constant):WaveModel(Wind, HeightField, align, intensity, longueur, ajust) {
+    this->WaveConstant = constant;
 }
