@@ -11,25 +11,25 @@
 using namespace std;
 
 int main () {
-	Height h1 = Height(4.5, 3.2, 10, 20, 27);
-	h1(4, 7) = 3.7;
-	double val1 = h1(4, 6);
-	double val2 = h1(4, 7);
-	std::cout << val1 << '\n';
-	std::cout << val2 << '\n';
-	h1.display(cout);
+	double val1 = 1.5;
+	double val2 = 1.5;
+	Height HeightField = Height(5, 5, 20, 20, 0);
 
-	Dvector v = Dvector(3, 2.5);
-	v(1) = 5.3;
-	v.display(cout);
+	Dvector Wind = Dvector(2, 2.5);
 
-	GerstnerWave wave = GerstnerWave(1.0, 1.0, 1.0, v);
+	GerstnerWave listeGerstner[3];
+	listeGerstner[0] = GerstnerWave(1.0, 1.0, 1.0, Wind);
+	listeGerstner[1] = GerstnerWave(1.0, 1.0, 1.0, Wind);
+	listeGerstner[2] = GerstnerWave(1.0, 1.0, 1.0, Wind);
 
-	WaveModel w = WaveModel(v, h1, val1, val2, val1, val2);
+	WaveModel w = WaveModel(Wind, val1, val2, val1, val2);
 
-	GerstnerWaveModel Gw = GerstnerWaveModel(v, h1, val1, val2, val1, val2, &wave, 1);
-    cout << "\n";
-	wave.display(cout);
-    cout << "\n";
-	w.display(cout);
+	GerstnerWaveModel Gw = GerstnerWaveModel(Wind, val1, val2, val1, val2, listeGerstner, 3);
+	double val3 = listeGerstner[0].EvalWave(Wind, 0);
+	double val4 = Gw.computeModel(Wind, 0);
+
+	std::cout << val3 << '\n';
+	std::cout << val4 << '\n';
+	Gw.display(cout);
+
 }

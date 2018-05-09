@@ -12,6 +12,13 @@ using namespace std;
 # define M_PI  3.14159265358979323846
 ////////////////////////////// Constructeurs /////////////////////////////////
 
+GerstnerWave::GerstnerWave() {
+    this->amplitude = 0;
+    this->phase = 0;
+    this->frequence = 0;
+    this->direction = Dvector(2);
+}
+
 GerstnerWave::GerstnerWave(double amplitude, double phase, double frequence, Dvector direction) {
     this->amplitude = amplitude;
     this->phase = phase;

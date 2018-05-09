@@ -9,11 +9,13 @@
 #include "Height.h"
 using namespace std;
 
+#ifndef WVMH
+#define WVMH
+
 
 class WaveModel
 {
     private:
-        Height HeightField;
         Dvector WindDirection;
         double alignement;
         double intensite;
@@ -21,9 +23,8 @@ class WaveModel
         double ajustement;
 
     public:
-        WaveModel(Dvector Wind, Height HgtF, double align, double intensity, double longueur, double ajust);
+        WaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust);
 
-        Height getHeightField() { return HeightField;}
         Dvector getWind() {return WindDirection;}
         double getAlignement() {return alignement;}
         double getIntensite() {return intensite;}
@@ -33,3 +34,5 @@ class WaveModel
         void display(ostream& str) const;
 
 };
+
+#endif
