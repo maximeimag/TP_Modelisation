@@ -41,6 +41,7 @@ class Dvector
 
         void display(ostream& str) const;
         void fillRandomly();
+        void resize(int taille, double valeur);
         int size() const;
 };
 

@@ -4,13 +4,14 @@ OBJ_DIR = obj
 BIN_DIR = bin
 
 
-PROG = $(BIN_DIR)/test $(BIN_DIR)/test_methodes_Dvector
+PROG = $(BIN_DIR)/test $(BIN_DIR)/test_methodes_Dvector $(BIN_DIR)/test_methodes_Dvector2
 OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 TEST_1 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+TEST_2 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector2.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 
 CC = clang++
-CXXFLAGS = -Wall -g
-LDFLAGS = -lm
+CXXFLAGS = -Wall -g -pg
+LDFLAGS = -lm -pg
 
 
 CPPS = $(SRC_DIR)/Dvector.cpp $(SRC_DIR)/test.cpp
@@ -43,6 +44,9 @@ $(OBJ_DIR)/test.o: $(SRC_DIR)/test.cpp
 $(OBJ_DIR)/test_methodes_Dvector.o: $(TEST_DIR)/test_methodes_Dvector.cpp
 	$(CC) $(CXXFLAGS) $(INCS) -c $(TEST_DIR)/test_methodes_Dvector.cpp -o $(OBJ_DIR)/test_methodes_Dvector.o
 
+$(OBJ_DIR)/test_methodes_Dvector2.o: $(TEST_DIR)/test_methodes_Dvector2.cpp
+	$(CC) $(CXXFLAGS) $(INCS) -c $(TEST_DIR)/test_methodes_Dvector2.cpp -o $(OBJ_DIR)/test_methodes_Dvector2.o
+
 
 
 $(BIN_DIR)/test: $(OBJS)
@@ -50,6 +54,9 @@ $(BIN_DIR)/test: $(OBJS)
 
 $(BIN_DIR)/test_methodes_Dvector: $(TEST_1)
 	$(CC) $(LDFLAGS) $(TEST_1) -o $(BIN_DIR)/test_methodes_Dvector
+
+$(BIN_DIR)/test_methodes_Dvector2: $(TEST_2)
+	$(CC) $(LDFLAGS) $(TEST_2) -o $(BIN_DIR)/test_methodes_Dvector2
 
 
 .PHONY: clean

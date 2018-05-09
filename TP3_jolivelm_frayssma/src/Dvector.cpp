@@ -11,7 +11,7 @@ using namespace std;
 ////////////////////////////// Constructeurs /////////////////////////////////
 
 Dvector::Dvector() {
-    cout << "la methode " << "Dvector() " << "a été appelée";
+    cout << "la methode " << "Dvector() " << "a été appelée" << endl;
     dim = 2;
     coordonnees = new double[dim];
     coordonnees[0] = 0.0;
@@ -19,7 +19,7 @@ Dvector::Dvector() {
 }
 
 Dvector::Dvector(int n) {
-    cout << "la methode " << "Dvector(int n) " << "a été appelée";
+    cout << "la methode " << "Dvector(int n) " << "a été appelée" << endl;
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -28,7 +28,7 @@ Dvector::Dvector(int n) {
 }
 
 Dvector::Dvector(int n, double val_init) {
-    cout << "la methode " << "Dvector(int n, double val_init) " << "a été appelée";
+    cout << "la methode " << "Dvector(int n, double val_init) " << "a été appelée" << endl;
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -37,6 +37,7 @@ Dvector::Dvector(int n, double val_init) {
 }
 
 Dvector::Dvector(const Dvector &Dvec) {
+    cout << "la methode " << "Dvector(const Dvector &Dvec) " << "a été appelée" << endl;
     dim = Dvec.dim;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -45,7 +46,7 @@ Dvector::Dvector(const Dvector &Dvec) {
 }
 
 Dvector::Dvector(string filename) {
-    cout << "la methode " << "Dvector(string filename) " << "a été appelée";
+    cout << "la methode " << "Dvector(string filename) " << "a été appelée" << endl;
     dim = 0;
     const char *name = filename.c_str();
     ifstream monFlux;
@@ -74,7 +75,7 @@ Dvector::Dvector(string filename) {
 //////////////////////////// Destructeur /////////////////////////////////////
 
 Dvector::~Dvector() {
-    cout << "la methode " << "~Dvector() " << "a été appelée";
+    cout << "la methode " << "~Dvector() " << "a été appelée" << endl;
     delete [] coordonnees;
 }
 
@@ -97,6 +98,20 @@ void Dvector::fillRandomly() {
     }
 }
 
+void Dvector::resize(int taille, double valeur){
+  if(dim < taille){
+    double* temp = new double[taille];
+    for (int i = 0; i<dim;i++){
+      temp[i] = coordonnees[i];
+    }
+    for (int i = dim;i<taille;i++){
+      temp[i] = valeur;
+    }
+    delete [] coordonnees;
+    coordonnees = temp;
+  }
+}
+
 int Dvector::size() const {
     return dim;
 }
@@ -116,6 +131,7 @@ double dot(const Dvector &u, const Dvector &v) {
 
 ////////////////////////// Operateurs : égalité ///////////////////////////////
 
+
 Dvector & Dvector::operator=(const Dvector &v) {
     dim = v.size();
     delete [] coordonnees;
@@ -124,8 +140,10 @@ Dvector & Dvector::operator=(const Dvector &v) {
     return *this;
 }
 
+//autre implémentation de l'égalité
+
 /*
-Dvector Dvector::operator=(const Dvector v) {
+Dvector & Dvector::operator=(const Dvector &v) {
     dim = v.size();
     coordonnees = new double[dim];
 
@@ -133,10 +151,9 @@ Dvector Dvector::operator=(const Dvector v) {
         coordonnees[i] = v(i);
     }
 
-    return this;
+    return *this;
 }
 */
-
 //////////////////////////// Operateurs : unaire vectoriel ////////////////////
 
 Dvector & Dvector::operator+=(const Dvector &v) {
@@ -304,9 +321,8 @@ void operator-(Dvector &v) {
 ostream & operator<<(ostream &out, const Dvector &v) {
     out << "dim " << v.size() << endl;
     for (int i = 0; i < v.size(); i ++) {
-        out << v(i) << " ";
+        out << v(i) << "\n";
     }
-    out << endl;
     return out;
 }
 

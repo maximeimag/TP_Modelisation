@@ -29,7 +29,7 @@ assert( str1.str()=="2.5\n2.5\n2.5\n");
 std::cout<<"OK ";
 
 //test de fillRandomly()
-Dvector v2(3,2.5);
+Dvector v2 = Dvector(3,2.5);
 assert( v2.size()==3 );
 v2.fillRandomly();
 assert( v2.size()==3 );
@@ -39,7 +39,7 @@ assert( str2.str()!="2.5\n2.5\n2.5\n");
 std::cout<<"OK ";
 
 //test du constructeur par recopie
-Dvector v3; v3 = Dvector(3,2.5);
+Dvector v3 = Dvector(v1);
 assert( v3.size()==3 );
 std::ostringstream str3;
 v3.display( str3 );
@@ -47,7 +47,6 @@ assert( str3.str()=="2.5\n2.5\n2.5\n");
 std::cout<<"OK ";
 
 //test du constructeur avec entrée fichier
-//test du constructeur par recopie
 Dvector v4("test/test1.txt");
 assert( v4.size()==10 );
 std::ostringstream str4;
