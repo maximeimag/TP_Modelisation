@@ -96,6 +96,19 @@ int Dvector::size() const {
     return dim;
 }
 
+double dot(const Dvector &u, const Dvector &v) {
+    double prod = 0;
+    if (v.size() == u.size()) {
+        for (size_t i = 0; i < v.size(); i++) {
+            prod += u(i)*v(i);
+        }
+    } else {
+        std::cout << "dot btw Dvector with different sizes" << '\n';
+        exit(-1);
+    }
+    return prod;
+}
+
 ////////////////////////// Operateurs : égalité ///////////////////////////////
 
 Dvector & Dvector::operator=(const Dvector &v) {

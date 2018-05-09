@@ -59,4 +59,6 @@ void operator-(Dvector &v);
 ostream & operator<<(ostream &, const Dvector &);
 istream & operator>>(istream &, Dvector &);
 
+double dot(const Dvector &u, const Dvector &v);
+
 #endif
