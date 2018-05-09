@@ -3,12 +3,15 @@
 #include <iostream>
 
 /** @todo Inclure les fichiers de définition du problème */
-#include "ocean.hxx"
+#include "Ocean.hxx"
 #include "Dvector.h"
 #include "Height.h"
 #include "GerstnerWaveModel.h"
 
 #include "window.hxx"
+
+Ocean *ocean = NULL;
+int mainwindow = 0;
 
 int main(int argc, char** argv) {
     /** @todo Initialiser des paramètres de simulation */
@@ -28,15 +31,16 @@ int main(int argc, char** argv) {
     listeGerstner[1] = GerstnerWave(1.0, 1.0, 1.0, Wind);
     listeGerstner[2] = GerstnerWave(1.0, 1.0, 1.0, Wind);
 
-    WaveModel w = WaveModel(Wind, val1, val2, val1, val2);
-
     GerstnerWaveModel Gw = GerstnerWaveModel(Wind, val1, val2, val1, val2, listeGerstner, 3);
 
     /** @todo Initialiser du champ de hauteur */
     Height HeightField = Height(lx, ly, nx, ny, 0);
 
     /** @todo Initialiser de l'océan */
-    Ocean ocean = Ocean(HeightField, Gw, time_skip, time_val);
+    Ocean ocean_model = Ocean(HeightField, Gw, time_skip, time_val);
+    ocean = &ocean_model;
+
+    ocean->display(cout);
 
     /* Initialisation de la fenêtre d'affichage */
     Window::init(WIDTH, HEIGHT, "Houle", argc, argv, "AZERTY", 50, 1);

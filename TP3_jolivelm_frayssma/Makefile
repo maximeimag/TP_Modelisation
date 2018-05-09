@@ -6,7 +6,7 @@ BIN_DIR = bin
 
 PROG = $(BIN_DIR)/test $(BIN_DIR)/test_methodes_Dvector $(BIN_DIR)/test_methodes_Dvector2 $(BIN_DIR)/Ocean
 OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
-OBJS_MAIN = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o $(OBJ_DIR)/main.o $(OBJ_DIR)/camera.o $(OBJ_DIR)/ocean.o $(OBJ_DIR)/window.o
+OBJS_MAIN = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o $(OBJ_DIR)/main.o $(OBJ_DIR)/camera.o $(OBJ_DIR)/Ocean.o $(OBJ_DIR)/window.o
 TEST_1 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 TEST_2 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector2.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 
@@ -56,8 +56,8 @@ $(OBJ_DIR)/camera.o: $(SRC_DIR)/camera.cxx
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cxx
 	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/main.cxx -o $(OBJ_DIR)/main.o
 
-$(OBJ_DIR)/ocean.o: $(SRC_DIR)/ocean.cxx
-	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/ocean.cxx -o $(OBJ_DIR)/ocean.o
+$(OBJ_DIR)/Ocean.o: $(SRC_DIR)/Ocean.cxx
+	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/Ocean.cxx -o $(OBJ_DIR)/Ocean.o
 
 $(OBJ_DIR)/window.o: $(SRC_DIR)/window.cxx
 	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/window.cxx -o $(OBJ_DIR)/window.o
@@ -74,7 +74,7 @@ $(BIN_DIR)/test_methodes_Dvector2: $(TEST_2)
 	$(CC) $(LDFLAGS) $(TEST_2) -o $(BIN_DIR)/test_methodes_Dvector2
 
 $(BIN_DIR)/Ocean: $(OBJS_MAIN)
-	$(CC) $(LDFLAGS) $(OBJS_MAIN) -o $(BIN_DIR)/Ocean
+	$(CC) $(LDFLAGS) -lglut -lGLU -lGL $(OBJS_MAIN) -o $(BIN_DIR)/Ocean
 
 
 

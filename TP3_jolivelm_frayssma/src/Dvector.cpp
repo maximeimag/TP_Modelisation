@@ -11,7 +11,7 @@ using namespace std;
 ////////////////////////////// Constructeurs /////////////////////////////////
 
 Dvector::Dvector() {
-    cout << "la methode " << "Dvector() " << "a été appelée" << endl;
+    //cout << "la methode " << "Dvector() " << "a été appelée" << endl;
     dim = 2;
     coordonnees = new double[dim];
     coordonnees[0] = 0.0;
@@ -19,7 +19,7 @@ Dvector::Dvector() {
 }
 
 Dvector::Dvector(int n) {
-    cout << "la methode " << "Dvector(int n) " << "a été appelée" << endl;
+    //cout << "la methode " << "Dvector(int n) " << "a été appelée" << endl;
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -28,7 +28,7 @@ Dvector::Dvector(int n) {
 }
 
 Dvector::Dvector(int n, double val_init) {
-    cout << "la methode " << "Dvector(int n, double val_init) " << "a été appelée" << endl;
+    //cout << "la methode " << "Dvector(int n, double val_init) " << "a été appelée" << endl;
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -37,7 +37,7 @@ Dvector::Dvector(int n, double val_init) {
 }
 
 Dvector::Dvector(const Dvector &Dvec) {
-    cout << "la methode " << "Dvector(const Dvector &Dvec) " << "a été appelée" << endl;
+    //cout << "la methode " << "Dvector(const Dvector &Dvec) " << "a été appelée" << endl;
     dim = Dvec.dim;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -46,7 +46,7 @@ Dvector::Dvector(const Dvector &Dvec) {
 }
 
 Dvector::Dvector(string filename) {
-    cout << "la methode " << "Dvector(string filename) " << "a été appelée" << endl;
+    //cout << "la methode " << "Dvector(string filename) " << "a été appelée" << endl;
     dim = 0;
     const char *name = filename.c_str();
     ifstream monFlux;
@@ -75,7 +75,7 @@ Dvector::Dvector(string filename) {
 //////////////////////////// Destructeur /////////////////////////////////////
 
 Dvector::~Dvector() {
-    cout << "la methode " << "~Dvector() " << "a été appelée" << endl;
+    //cout << "la methode " << "~Dvector() " << "a été appelée" << endl;
     delete [] coordonnees;
 }
 

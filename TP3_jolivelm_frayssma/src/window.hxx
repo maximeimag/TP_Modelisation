@@ -9,10 +9,10 @@
 #define WIDTH  640
 #define HEIGHT 480
 
-#include "ocean.hxx"
+#include "Ocean.hxx"
 
 extern Ocean* ocean;
-extern int    mainwindow;
+extern int mainwindow;
 
 namespace Window {
 

@@ -10,6 +10,8 @@
 
 #include "camera.hxx"
 #include "window.hxx"
+#include "Ocean.hxx"
+#include <GL/glut.h>
 
 namespace Window {
 
@@ -76,6 +78,7 @@ namespace Window {
   void draw_ocean() {
     // Réalise effectivement l'étape de calcul
     ocean->main_computation();
+    ocean->display(cout);
 
     // Impose la couleur d'affichage de la grille
     glColor3ub(82, 184, 255);
@@ -84,7 +87,7 @@ namespace Window {
     // les colonnes à afficher
     for(int x = 0 ; x < nxOcean ; x++) {
       // Récupère les données depuis la classe Ocean
-      ocean->gl_vertexArrayY(x, vertexOceanY[x]);
+      ocean->gl_VertexArrayY(x, vertexOceanY[x]);
       glEnableClientState(GL_VERTEX_ARRAY);
       glVertexPointer(3, GL_DOUBLE, 0, vertexOceanY[x]);
       glDrawArrays(GL_LINE_STRIP, 0, nyOcean+1);
@@ -95,7 +98,7 @@ namespace Window {
     // les lignes à afficher
     for(int y = 0 ; y < nyOcean ; y++) {
       // Récupère les données depuis la classe Ocean
-      ocean->gl_vertexArrayX(y, vertexOceanX[y]);
+      ocean->gl_VertexArrayX(y, vertexOceanX[y]);
       glEnableClientState(GL_VERTEX_ARRAY);
       glVertexPointer(3, GL_DOUBLE, 0, vertexOceanX[y]);
       glDrawArrays(GL_LINE_STRIP, 0, nxOcean+1);

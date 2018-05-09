@@ -24,7 +24,16 @@ Height::Height(const Height &Hgt) {
     L_y = Hgt.L_y;
     n_x = Hgt.n_x;
     n_y = Hgt.n_y;
-    datas = Dvector(Hgt.datas);
+    datas = Hgt.datas;
+}
+
+Height & Height::operator=(const Height &Hgt) {
+    L_x = Hgt.L_x;
+    L_y = Hgt.L_y;
+    n_x = Hgt.n_x;
+    n_y = Hgt.n_y;
+    datas = Hgt.datas;
+    return *this;
 }
 
 Height::Height() {
@@ -36,22 +45,22 @@ Height::Height() {
 }
 
 Height::~Height() {
-    //delete [] this->datas;
+    delete &this->datas;
 }
 
-double Height::getL_x() {
+double Height::getL_x() const {
     return L_x;
 }
 
-double Height::getL_y() {
+double Height::getL_y() const {
     return L_y;
 }
 
-int Height::getn_x() {
+int Height::getn_x() const {
     return n_x;
 }
 
-int Height::getn_y() {
+int Height::getn_y() const {
     return n_y;
 }
 

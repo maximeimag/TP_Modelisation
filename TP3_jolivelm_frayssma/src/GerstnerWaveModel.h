@@ -21,9 +21,13 @@ class GerstnerWaveModel : public WaveModel
         size_t nb_wave;
 
     public:
+        GerstnerWaveModel();
         GerstnerWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, GerstnerWave * listeGerstner, size_t nb_wave);
         double computeModel(Dvector x0, double time);
         void display(ostream& str) const;
+
+        GerstnerWaveModel & operator=(const GerstnerWaveModel &Model);
+        ~GerstnerWaveModel();
 };
 
 

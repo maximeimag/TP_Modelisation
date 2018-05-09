@@ -15,7 +15,8 @@ using namespace std;
 
 class WaveModel
 {
-    private:
+
+    protected:
         Dvector WindDirection;
         double alignement;
         double intensite;
@@ -23,7 +24,12 @@ class WaveModel
         double ajustement;
 
     public:
+        WaveModel();
         WaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust);
+        ~WaveModel();
+
+        WaveModel & operator=(const WaveModel &WvM);
+
 
         Dvector getWind() {return WindDirection;}
         double getAlignement() {return alignement;}

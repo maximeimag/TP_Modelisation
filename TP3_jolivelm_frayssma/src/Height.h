@@ -27,12 +27,15 @@ class Height
         Height(const Height &Hgt);
         ~Height();
 
+
+        Height & operator=(const Height &Hgt);
+
         double & operator()(int i, int j) const { return this->datas(i*n_x + j);}
 
-        double getL_x();
-        double getL_y();
-        int getn_x();
-        int getn_y();
+        double getL_x() const;
+        double getL_y() const;
+        int getn_x() const;
+        int getn_y() const;
 
         void set(int i, int j, double val);
 
