@@ -11,6 +11,7 @@ using namespace std;
 ////////////////////////////// Constructeurs /////////////////////////////////
 
 Dvector::Dvector() {
+    cout << "la methode " << "Dvector() " << "a été appelée";
     dim = 2;
     coordonnees = new double[dim];
     coordonnees[0] = 0.0;
@@ -18,6 +19,7 @@ Dvector::Dvector() {
 }
 
 Dvector::Dvector(int n) {
+    cout << "la methode " << "Dvector(int n) " << "a été appelée";
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -26,6 +28,7 @@ Dvector::Dvector(int n) {
 }
 
 Dvector::Dvector(int n, double val_init) {
+    cout << "la methode " << "Dvector(int n, double val_init) " << "a été appelée";
     dim = n;
     coordonnees = new double[dim];
     for (int i = 0; i < dim; i++) {
@@ -42,6 +45,7 @@ Dvector::Dvector(const Dvector &Dvec) {
 }
 
 Dvector::Dvector(string filename) {
+    cout << "la methode " << "Dvector(string filename) " << "a été appelée";
     dim = 0;
     const char *name = filename.c_str();
     ifstream monFlux;
@@ -70,7 +74,8 @@ Dvector::Dvector(string filename) {
 //////////////////////////// Destructeur /////////////////////////////////////
 
 Dvector::~Dvector() {
-    //delete [] coordonnees;
+    cout << "la methode " << "~Dvector() " << "a été appelée";
+    delete [] coordonnees;
 }
 
 //////////////////////////// Display /////////////////////////////////////////
@@ -113,6 +118,7 @@ double dot(const Dvector &u, const Dvector &v) {
 
 Dvector & Dvector::operator=(const Dvector &v) {
     dim = v.size();
+    delete [] coordonnees;
     coordonnees = new double[dim];
     memcpy(coordonnees, v.coordonnees, dim*sizeof(double));
     return *this;

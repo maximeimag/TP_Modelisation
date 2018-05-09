@@ -8,6 +8,8 @@
 #include "WaveModel.h"
 using namespace std;
 
+
+
 ////////////////////////////// Constructeurs /////////////////////////////////
 
 WaveModel::WaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust) {

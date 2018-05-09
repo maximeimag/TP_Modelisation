@@ -8,6 +8,10 @@
 #include "Dvector.h"
 using namespace std;
 
+#ifndef GWH
+#define GWH
+
+
 
 class GerstnerWave
 {
@@ -24,3 +28,5 @@ class GerstnerWave
         void display(ostream& str) const;
 
 };
+
+#endif

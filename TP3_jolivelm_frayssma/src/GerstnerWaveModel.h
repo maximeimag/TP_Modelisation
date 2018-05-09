@@ -8,6 +8,9 @@
 #include "WaveModel.h"
 #include "GerstnerWave.h"
 
+#ifndef GWMH
+#define GWMH
+
 using namespace std;
 
 
@@ -22,3 +25,6 @@ class GerstnerWaveModel : public WaveModel
         double computeModel(Dvector x0, double time);
         void display(ostream& str) const;
 };
+
+
+#endif

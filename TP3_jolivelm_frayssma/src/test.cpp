@@ -26,7 +26,7 @@ int main () {
 
 	GerstnerWaveModel Gw = GerstnerWaveModel(Wind, val1, val2, val1, val2, listeGerstner, 3);
 	double val3 = listeGerstner[0].EvalWave(Wind, 0);
-	double val4 = Gw.EvalWaves(Wind, 0);
+	double val4 = Gw.computeModel(Wind, 0);
 
 	std::cout << val3 << '\n';
 	std::cout << val4 << '\n';
