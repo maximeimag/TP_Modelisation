@@ -5,12 +5,12 @@ BIN_DIR = bin
 
 
 PROG = $(BIN_DIR)/test $(BIN_DIR)/test_methodes_Dvector $(BIN_DIR)/test_methodes_Dvector2 $(BIN_DIR)/test_methodes_Dvector3 $(BIN_DIR)/test_methodes_Dvector4 #$(BIN_DIR)/Ocean
-OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
-OBJS_MAIN = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o $(OBJ_DIR)/main.o $(OBJ_DIR)/camera.o $(OBJ_DIR)/ocean.o $(OBJ_DIR)/window.o
-TEST_1 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
-TEST_2 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector2.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
-TEST_3 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector3.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
-TEST_4 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/test_methodes_Dvector4.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+OBJS = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/test.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+OBJS_MAIN = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o $(OBJ_DIR)/main.o $(OBJ_DIR)/camera.o $(OBJ_DIR)/ocean.o $(OBJ_DIR)/window.o
+TEST_1 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/test_methodes_Dvector.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+TEST_2 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/test_methodes_Dvector2.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+TEST_3 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/test_methodes_Dvector3.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
+TEST_4 = $(OBJ_DIR)/Dvector.o $(OBJ_DIR)/DvectorComplex.o $(OBJ_DIR)/test_methodes_Dvector4.o $(OBJ_DIR)/Height.o $(OBJ_DIR)/WaveModel.o $(OBJ_DIR)/GerstnerWave.o $(OBJ_DIR)/GerstnerWaveModel.o  $(OBJ_DIR)/PhilipsWaveModel.o
 
 CC = clang++
 CXXFLAGS = -Wall -g -pg
@@ -40,6 +40,10 @@ $(OBJ_DIR)/Height.o: $(SRC_DIR)/Height.cpp
 
 $(OBJ_DIR)/Dvector.o: $(SRC_DIR)/Dvector.cpp
 	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/Dvector.cpp -o $(OBJ_DIR)/Dvector.o
+
+$(OBJ_DIR)/DvectorComplex.o: $(SRC_DIR)/DvectorComplex.cpp
+	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/DvectorComplex.cpp -o $(OBJ_DIR)/DvectorComplex.o
+
 
 $(OBJ_DIR)/test.o: $(SRC_DIR)/test.cpp
 	$(CC) $(CXXFLAGS) $(INCS) -c $(SRC_DIR)/test.cpp -o $(OBJ_DIR)/test.o
