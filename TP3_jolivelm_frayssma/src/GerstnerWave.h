@@ -18,6 +18,7 @@ class GerstnerWave
         Dvector direction;
 
     public:
+        GerstnerWave();
         GerstnerWave(double amplitude, double phase, double frequence, Dvector direction);
         double EvalWave(Dvector x0, double time);
         void display(ostream& str) const;

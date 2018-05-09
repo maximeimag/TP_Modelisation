@@ -17,6 +17,6 @@ class PhilipsWaveModel : public WaveModel
         double WaveConstant;
 
     public:
-        PhilipsWaveModel(Dvector Wind, Height HeightField, double align, double intensity, double longueur, double ajust, double Constant);
+        PhilipsWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, double Constant);
 
 };

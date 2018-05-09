@@ -13,7 +13,6 @@ using namespace std;
 class WaveModel
 {
     private:
-        Height HeightField;
         Dvector WindDirection;
         double alignement;
         double intensite;
@@ -21,9 +20,8 @@ class WaveModel
         double ajustement;
 
     public:
-        WaveModel(Dvector Wind, Height HgtF, double align, double intensity, double longueur, double ajust);
-
-        Height getHeightField() { return HeightField;}
+        WaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust);
+        
         Dvector getWind() {return WindDirection;}
         double getAlignement() {return alignement;}
         double getIntensite() {return intensite;}
