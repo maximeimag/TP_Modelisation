@@ -65,7 +65,7 @@ int Height::getn_y() const {
 }
 
 void Height::set(int i, int j, double val) {
-    this->datas(i*n_y + n_x) = val;
+    this->datas(i*n_x + j) = val;
 }
 
 void Height::display(ostream& str) const {

@@ -19,12 +19,17 @@ class PhilipsWaveModel : public WaveModel
 {
     private:
         double WaveConstant;
+        double align;
+        double intensity;
+        double longueur;
+        double ajust;
+        Dvector Wind;
 
     public:
         PhilipsWaveModel();
         PhilipsWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, double Constant);
-        double computeModel(Dvector x0, double time_val);
-        ~PhilipsWaveModel();
+        double computeModel();
+        void display(ostream& str) const;
 };
 
 #endif
