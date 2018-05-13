@@ -5,10 +5,9 @@
 #include <vector>
 #include <cmath>
 #include "Ocean.hxx"
-#include "GerstnerWave.h"
 using namespace std;
 
-Ocean::Ocean(Height & HeightField, GerstnerWaveModel & Model, double init_time_skip, double init_time_val) {
+Ocean::Ocean(Height & HeightField, PhilipsWaveModel & Model, double init_time_skip, double init_time_val) {
     this->HeightField = HeightField;
     this->Model = Model;
     this->time_skip = init_time_skip;
@@ -16,15 +15,7 @@ Ocean::Ocean(Height & HeightField, GerstnerWaveModel & Model, double init_time_s
 }
 
 void Ocean::main_computation() {
-    Dvector pos = Dvector(2);
-    for (size_t i = 0; i < this->getNy(); i++) {
-        for (size_t j = 0; j < this->getNx(); j++) {
-            pos(0) = ((double)i/this->getNy())*this->get_ly();
-            pos(1) = ((double)j/this->getNx())*this->get_lx();
-            //pos.display(cout);
-            this->HeightField(i, j) = this->Model.computeModel(pos, this->time_val);
-        }
-    }
+    this->Model.computeModel(this->HeightField, this->getNx(), this->getNy(), this->get_lx(), this->get_ly(), this->get_time());
     this->time_val += this->time_skip;
 }
 

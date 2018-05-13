@@ -5,8 +5,11 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
+#include <cmath>
 #include "Dvector.h"
 using namespace std;
+
+# define M_PI  3.14159265358979323846
 
 ////////////////////////////// Constructeurs /////////////////////////////////
 
@@ -98,6 +101,17 @@ void Dvector::fillRandomly() {
     }
 }
 
+//estimation de la loi normale entrée réduite par la méthode de Box-Muller
+void Dvector::fillNormal() {
+    int nb_pas = 500000;
+    double U, V;
+    for (int i = 0; i < dim; i++) {
+        U = (double)(rand() % nb_pas)/(double)nb_pas;
+        V = (double)(rand() % nb_pas)/(double)nb_pas;
+        coordonnees[i] = sqrt(-2*log(U))*cos(2*M_PI*V);
+    }
+}
+
 void Dvector::resize(int taille, double valeur){
   if(dim < taille){
     double* temp = new double[taille];
@@ -114,6 +128,18 @@ void Dvector::resize(int taille, double valeur){
 
 int Dvector::size() const {
     return dim;
+}
+
+double square(double x) {
+    return x*x;
+}
+
+double Dvector::norm() const {
+    double norme = 0;
+    for (int i = 0; i < dim; i++) {
+        norme += square(coordonnees[i]);
+    }
+    return sqrt(norme);
 }
 
 double dot(const Dvector &u, const Dvector &v) {

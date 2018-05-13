@@ -7,6 +7,7 @@
 #include <vector>
 #include "Dvector.h"
 #include "WaveModel.h"
+#include "DvectorComplex.h"
 
 using namespace std;
 
@@ -19,17 +20,15 @@ class PhilipsWaveModel : public WaveModel
 {
     private:
         double WaveConstant;
-        double align;
-        double intensity;
-        double longueur;
-        double ajust;
-        Dvector Wind;
+        double WindSpeed;
 
     public:
         PhilipsWaveModel();
-        PhilipsWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, double Constant);
-        double computeModel();
+        PhilipsWaveModel(Dvector Wind, double Constant, double speed);
+        void computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val);
         void display(ostream& str) const;
 };
+
+void fft(DvectorComplex & x, size_t n);
 
 #endif

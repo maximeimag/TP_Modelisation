@@ -41,8 +41,10 @@ class Dvector
 
         void display(ostream& str) const;
         void fillRandomly();
+        void fillNormal();
         void resize(int taille, double valeur);
         int size() const;
+        double norm() const;
 };
 
 Dvector  operator+(const Dvector &, const Dvector &);
@@ -61,5 +63,7 @@ ostream & operator<<(ostream &, const Dvector &);
 istream & operator>>(istream &, Dvector &);
 
 double dot(const Dvector &u, const Dvector &v);
+
+double square(double x);
 
 #endif

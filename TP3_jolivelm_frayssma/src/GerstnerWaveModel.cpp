@@ -13,20 +13,30 @@ GerstnerWaveModel::GerstnerWaveModel():WaveModel() {
     this->nb_wave = 0;
 }
 
-GerstnerWaveModel::GerstnerWaveModel(Dvector Wind, double align, double intensity, double longueur, double ajust, GerstnerWave * listeGerstner, size_t nb_wave):WaveModel(Wind, align, intensity, longueur, ajust) {
+GerstnerWaveModel::GerstnerWaveModel(Dvector Wind, GerstnerWave * listeGerstner, size_t nb_wave):WaveModel(Wind) {
     this->listeGerstner = listeGerstner;
     this->nb_wave = nb_wave;
 }
 
-double GerstnerWaveModel::computeModel(Dvector x0, double time_val) {
-    double val = 0;
-    for (size_t i = 0; i < this->nb_wave; i++) {
-        val += this->listeGerstner[i].EvalWave(x0, time_val);
+void GerstnerWaveModel::computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val) {
+    Dvector pos = Dvector(2);
+    double val;
+    for (size_t i = 0; i < ny; i++) {
+        for (size_t j = 0; j < nx; j++) {
+            pos(0) = ((double)i/ny)*ly;
+            pos(1) = ((double)j/nx)*lx;
+            val = 0;
+            for (size_t i = 0; i < this->nb_wave; i++) {
+                val += this->listeGerstner[i].EvalWave(pos, time_val);
+            }
+            HeightField(i, j) = val;
+        }
     }
-    return val;
 }
 
 void GerstnerWaveModel::display(ostream &str) const {
+    str << "Wind direction :\n";
+    this->WindDirection.display(str);
     for (size_t i = 0; i < this->nb_wave; i++) {
         str << "Wave [" << i << "]" << "\n";
         this->listeGerstner[i].display(str);
@@ -39,12 +49,7 @@ GerstnerWaveModel::~GerstnerWaveModel() {
 
 GerstnerWaveModel & GerstnerWaveModel::operator=(const GerstnerWaveModel &Model) {
     WindDirection = Model.WindDirection;
-    alignement = Model.alignement;
-    intensite = Model.intensite;
-    longueur_onde = Model.longueur_onde;
-    ajustement = Model.ajustement;
     nb_wave = Model.nb_wave;
-
     delete [] listeGerstner;
     listeGerstner = new GerstnerWave[nb_wave];
     memcpy(listeGerstner, Model.listeGerstner, nb_wave*sizeof(GerstnerWave));
