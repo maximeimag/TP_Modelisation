@@ -45,22 +45,22 @@ Height::Height() {
 }
 
 Height::~Height() {
-    delete &this->datas;
+  return;
 }
 
-double Height::getL_x() const {
+double Height::getL_x() const{
     return L_x;
 }
 
-double Height::getL_y() const {
+double Height::getL_y() const{
     return L_y;
 }
 
-int Height::getn_x() const {
+int Height::getn_x() const{
     return n_x;
 }
 
-int Height::getn_y() const {
+int Height::getn_y() const{
     return n_y;
 }
 

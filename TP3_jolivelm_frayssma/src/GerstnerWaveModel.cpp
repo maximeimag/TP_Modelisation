@@ -44,7 +44,7 @@ void GerstnerWaveModel::display(ostream &str) const {
 }
 
 GerstnerWaveModel::~GerstnerWaveModel() {
-    delete &this->WindDirection;
+  return;
 }
 
 GerstnerWaveModel & GerstnerWaveModel::operator=(const GerstnerWaveModel &Model) {

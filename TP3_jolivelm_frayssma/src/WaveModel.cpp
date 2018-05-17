@@ -17,7 +17,7 @@ WaveModel::WaveModel() {
 }
 
 WaveModel::~WaveModel() {
-    delete &this->WindDirection;
+    return;
 }
 
 WaveModel::WaveModel(Dvector WindDirection_init) {

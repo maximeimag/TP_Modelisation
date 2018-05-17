@@ -33,9 +33,9 @@ class Height
         double & operator()(int i, int j) const { return this->datas(i*n_x + j);}
 
         double getL_x() const;
-        double getL_y() const;
-        int getn_x() const;
-        int getn_y() const;
+        double getL_y()const;
+        int getn_x()const;
+        int getn_y()const;
 
         void set(int i, int j, double val);
 

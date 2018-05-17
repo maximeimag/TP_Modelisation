@@ -105,6 +105,6 @@ void PhilipsWaveModel::computeModel(Height &HeightField, int nx, int ny, double 
 }
 
 void PhilipsWaveModel::display(ostream &str) const {
-    str << "Wind direction :\n";
-    this->WindDirection.display(str);
+    str << "WindSpeed : " << WindSpeed << endl;
+    str << "WaveConstant : " << WaveConstant << endl;
 }
