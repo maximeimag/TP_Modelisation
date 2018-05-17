@@ -15,12 +15,12 @@ class Ocean
 {
     private:
         Height HeightField;
-        PhilipsWaveModel Model;
+        WaveModel & Model;
         double time_skip;
         double time_val;
 
     public:
-        Ocean(Height & HeightField, PhilipsWaveModel & Model, double init_time_skip, double init_time_val);
+        Ocean(Height & HeightField, WaveModel & Model, double init_time_skip, double init_time_val);
         ~Ocean();
 
         void main_computation();

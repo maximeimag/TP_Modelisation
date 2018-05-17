@@ -10,6 +10,11 @@ using namespace std;
 
 # define M_PI  3.14159265358979323846
 
+PhilipsWaveModel::~PhilipsWaveModel() {
+    return;
+}
+
+
 PhilipsWaveModel::PhilipsWaveModel():WaveModel() {
     this->WindSpeed = 0;
     this->WaveConstant = 0;

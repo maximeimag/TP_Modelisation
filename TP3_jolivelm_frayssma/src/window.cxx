@@ -5,6 +5,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <unistd.h>
 
 #include "gl_defs.hxx"
 
@@ -50,7 +51,7 @@ namespace Window {
 
     glutSwapBuffers();
     glutPostRedisplay();
-
+    
     nanosleep(&tim1, &tim2);
 
     frames++;
@@ -123,7 +124,7 @@ namespace Window {
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH | GLUT_MULTISAMPLE);
     glutInitWindowSize(width, height);
     mainwindow = glutCreateWindow(titre.c_str());
-    glEnable(GL_MULTISAMPLE);
+    //glEnable(GL_MULTISAMPLE);
     Camera::KEYBOARD mode = keyboard=="azerty" ? Camera::AZERTY : Camera::QWERTY;
     camera = new Camera(mode, -100, 100, -100, 4*M_PI/7, M_PI/4, 0.01, translation_speed, WIDTH, HEIGHT);
     fps_goal = p_fps;

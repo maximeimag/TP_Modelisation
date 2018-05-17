@@ -1,0 +1,1256 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 41.67      0.05     0.05      672    74.42   118.98  fft(DvectorComplex&)
+ 25.00      0.08     0.03   343392     0.09     0.09  DvectorComplex::DvectorComplex(int, double, double)
+ 16.67      0.10     0.02      672    29.77   175.91  PhilipsWaveModel::computeModel(Height&, int, int, double, double, double)
+  8.33      0.11     0.01  4610320     0.00     0.00  Dvector::operator()(int) const
+  8.33      0.12     0.01  2150400     0.00     0.00  square(double)
+  0.00      0.12     0.00  5591040     0.00     0.00  DvectorComplex::get_Im(int) const
+  0.00      0.12     0.00  5591040     0.00     0.00  DvectorComplex::get_Real(int) const
+  0.00      0.12     0.00  2827776     0.00     0.00  DvectorComplex::set_Im(int, double)
+  0.00      0.12     0.00  2688015     0.00     0.00  Dvector::size() const
+  0.00      0.12     0.00  2558976     0.00     0.00  DvectorComplex::set_Real(int, double)
+  0.00      0.12     0.00  2021376     0.00     0.00  DvectorComplex::cp_val(int, int, DvectorComplex const&)
+  0.00      0.12     0.00   833280     0.00     0.00  Height::operator()(int, int) const
+  0.00      0.12     0.00   537600     0.00     0.01  dot(Dvector const&, Dvector const&)
+  0.00      0.12     0.00   537600     0.00     0.00  _ZSt4sqrtIiEN9__gnu_cxx11__enable_ifIXsr12__is_integerIT_EE7__valueEdE6__typeES2_
+  0.00      0.12     0.00   344064     0.00     0.00  DvectorComplex::getDim()
+  0.00      0.12     0.00   343392     0.00     0.00  DvectorComplex::~DvectorComplex()
+  0.00      0.12     0.00   311073     0.00     0.00  Ocean::getNx() const
+  0.00      0.12     0.00   311073     0.00     0.00  Height::getn_x() const
+  0.00      0.12     0.00   297633     0.00     0.00  Ocean::getNy() const
+  0.00      0.12     0.00   297633     0.00     0.00  Height::getn_y() const
+  0.00      0.12     0.00   282244     0.00     0.00  _ZSt3powIiiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_
+  0.00      0.12     0.00   268800     0.00     0.01  Dvector::norm() const
+  0.00      0.12     0.00    53800     0.00     0.00  std::vector<double*, std::allocator<double*> >::operator[](unsigned long)
+  0.00      0.12     0.00    13440     0.00     0.05  Ocean::gl_VertexArrayX(int, double*) const
+  0.00      0.12     0.00    13440     0.00     0.05  Ocean::gl_VertexArrayY(int, double*) const
+  0.00      0.12     0.00     8747     0.00     0.00  std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const
+  0.00      0.12     0.00     6066     0.00     0.00  std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const
+  0.00      0.12     0.00     6053     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*)
+  0.00      0.12     0.00     6053     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*)
+  0.00      0.12     0.00     5394     0.00     0.00  std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*)
+  0.00      0.12     0.00     5380     0.00     0.00  std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator*() const
+  0.00      0.12     0.00     3360     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_left(std::_Rb_tree_node_base*)
+  0.00      0.12     0.00     2701     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end()
+  0.00      0.12     0.00     2693     0.00     0.00  std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator==(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) const
+  0.00      0.12     0.00     2693     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_begin()
+  0.00      0.12     0.00     2693     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_right(std::_Rb_tree_node_base*)
+  0.00      0.12     0.00     2692     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&)
+  0.00      0.12     0.00     2692     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end()
+  0.00      0.12     0.00     2692     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&)
+  0.00      0.12     0.00     2692     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&)
+  0.00      0.12     0.00     2692     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&)
+  0.00      0.12     0.00     2692     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end()
+  0.00      0.12     0.00     2688     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const
+  0.00      0.12     0.00     2688     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const
+  0.00      0.12     0.00     1513     0.00     0.00  Ocean::get_lx() const
+  0.00      0.12     0.00     1513     0.00     0.00  Ocean::get_ly() const
+  0.00      0.12     0.00     1513     0.00     0.00  Height::getL_x() const
+  0.00      0.12     0.00     1513     0.00     0.00  Height::getL_y() const
+  0.00      0.12     0.00     1364     0.00     0.00  Dvector::~Dvector()
+  0.00      0.12     0.00     1348     0.00     0.00  Dvector::Dvector(int)
+  0.00      0.12     0.00      673     0.00     0.00  PhilipsWaveModel::display(std::ostream&) const
+  0.00      0.12     0.00      673     0.00     0.87  Ocean::display(std::ostream&) const
+  0.00      0.12     0.00      673     0.00     0.87  Height::display(std::ostream&) const
+  0.00      0.12     0.00      672     0.00   118.98  ifft(DvectorComplex&)
+  0.00      0.12     0.00      672     0.00   175.91  Ocean::main_computation()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::translation()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getX()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getY()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getZ()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getSightX()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getSightY()
+  0.00      0.12     0.00      672     0.00     0.00  Camera::getSightZ()
+  0.00      0.12     0.00      672     0.00   178.60  Window::draw_ocean()
+  0.00      0.12     0.00      672     0.00     0.00  Window::draw_fps()
+  0.00      0.12     0.00      672     0.00     0.00  Dvector::fillNormal()
+  0.00      0.12     0.00      672     0.00     0.00  Ocean::get_time() const
+  0.00      0.12     0.00      120     0.00     0.00  std::_Iter_base<double**, false>::_S_base(double**)
+  0.00      0.12     0.00       72     0.00     0.00  std::_Niter_base<double**>::iterator_type std::__niter_base<double**>(double**)
+  0.00      0.12     0.00       48     0.00     0.00  __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::base() const
+  0.00      0.12     0.00       48     0.00     0.00  std::vector<double*, std::allocator<double*> >::size() const
+  0.00      0.12     0.00       48     0.00     0.00  std::_Miter_base<double**>::iterator_type std::__miter_base<double**>(double**)
+  0.00      0.12     0.00       40     0.00     0.00  __gnu_cxx::new_allocator<double*>::construct(double**, double* const&)
+  0.00      0.12     0.00       40     0.00     0.00  void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&)
+  0.00      0.12     0.00       40     0.00     0.00  std::vector<double*, std::allocator<double*> >::push_back(double* const&)
+  0.00      0.12     0.00       38     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator()
+  0.00      0.12     0.00       36     0.00     0.00  __gnu_cxx::new_allocator<double*>::max_size() const
+  0.00      0.12     0.00       24     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<double*> >::max_size(std::allocator<double*> const&)
+  0.00      0.12     0.00       24     0.00     0.00  __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::__normal_iterator(double** const&)
+  0.00      0.12     0.00       24     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() const
+  0.00      0.12     0.00       24     0.00     0.00  std::vector<double*, std::allocator<double*> >::max_size() const
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double*>(double* const*, double* const*, double**)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__uninitialized_copy<true>::__uninit_copy<double**, double**>(double**, double**, double**)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__copy_move_a<false, double**, double**>(double**, double**, double**)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::uninitialized_copy<double**, double**>(double**, double**, double**)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__uninitialized_copy_a<double**, double**, double*>(double**, double**, double**, std::allocator<double*>&)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::__uninitialized_move_if_noexcept_a<double**, double**, std::allocator<double*> >(double**, double**, double**, std::allocator<double*>&)
+  0.00      0.12     0.00       24     0.00     0.00  double** std::copy<double**, double**>(double**, double**, double**)
+  0.00      0.12     0.00       20     0.00     0.00  Ocean::init_gl_VertexArrayX(int, double*) const
+  0.00      0.12     0.00       20     0.00     0.00  Ocean::init_gl_VertexArrayY(int, double*) const
+  0.00      0.12     0.00       15     0.00     0.00  Dvector::operator=(Dvector const&)
+  0.00      0.12     0.00       14     0.00     0.00  Camera::rotation(int, int)
+  0.00      0.12     0.00       14     0.00     0.00  void std::_Destroy_aux<true>::__destroy<double**>(double**, double**)
+  0.00      0.12     0.00       14     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long)
+  0.00      0.12     0.00       14     0.00     0.00  void std::_Destroy<double**>(double**, double**)
+  0.00      0.12     0.00       14     0.00     0.00  void std::_Destroy<double**, double*>(double**, double**, std::allocator<double*>&)
+  0.00      0.12     0.00       12     0.00     0.00  Dvector::Dvector(Dvector const&)
+  0.00      0.12     0.00       12     0.00     0.00  __gnu_cxx::new_allocator<double*>::deallocate(double**, unsigned long)
+  0.00      0.12     0.00       12     0.00     0.00  __gnu_cxx::new_allocator<double*>::allocate(unsigned long, void const*)
+  0.00      0.12     0.00       12     0.00     0.00  __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::difference_type __gnu_cxx::operator-<double**, std::vector<double*, std::allocator<double*> > >(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&, __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&)
+  0.00      0.12     0.00       12     0.00     0.00  std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.12     0.00       12     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_M_allocate(unsigned long)
+  0.00      0.12     0.00       12     0.00     0.00  std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&)
+  0.00      0.12     0.00       12     0.00     0.00  std::vector<double*, std::allocator<double*> >::end()
+  0.00      0.12     0.00       12     0.00     0.00  std::vector<double*, std::allocator<double*> >::begin()
+  0.00      0.12     0.00       12     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.12     0.00       10     0.00     0.00  Dvector::Dvector()
+  0.00      0.12     0.00        6     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_rightmost()
+  0.00      0.12     0.00        6     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*)
+  0.00      0.12     0.00        6     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node_base const*)
+  0.00      0.12     0.00        4     0.00     0.00  Window::fps_action()
+  0.00      0.12     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocate(unsigned long, void const*)
+  0.00      0.12     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::construct(std::pair<Camera::DIR const, int>*, std::pair<Camera::DIR const, int> const&)
+  0.00      0.12     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::new_allocator()
+  0.00      0.12     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::~new_allocator()
+  0.00      0.12     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::max_size() const
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_M_const_cast() const
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_Node_allocator() const
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::size() const
+  0.00      0.12     0.00        4     0.00     0.00  std::allocator<std::pair<Camera::DIR const, int> >::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >(std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > > const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::allocator<std::pair<Camera::DIR const, int> >::~allocator()
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::pair<Camera::DIR const, int>::pair(Camera::DIR const&, int const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_node()
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&)
+  0.00      0.12     0.00        4     0.00     0.00  std::pair<Camera::DIR const, int>* std::__addressof<std::pair<Camera::DIR const, int> >(std::pair<Camera::DIR const, int>&)
+  0.00      0.12     0.00        3     0.00     0.00  GerstnerWave::GerstnerWave(double, double, double, Dvector)
+  0.00      0.12     0.00        3     0.00     0.00  GerstnerWave::GerstnerWave()
+  0.00      0.12     0.00        3     0.00     0.00  GerstnerWave::~GerstnerWave()
+  0.00      0.12     0.00        3     0.00     0.00  GerstnerWave::operator=(GerstnerWave const&)
+  0.00      0.12     0.00        2     0.00     0.00  Dvector::Dvector(int, double)
+  0.00      0.12     0.00        2     0.00     0.00  WaveModel::WaveModel(Dvector)
+  0.00      0.12     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<double*>::new_allocator()
+  0.00      0.12     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<double*>::~new_allocator()
+  0.00      0.12     0.00        2     0.00     0.00  std::allocator<double*>::allocator()
+  0.00      0.12     0.00        2     0.00     0.00  std::allocator<double*>::~allocator()
+  0.00      0.12     0.00        2     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::_Vector_impl()
+  0.00      0.12     0.00        2     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::~_Vector_impl()
+  0.00      0.12     0.00        2     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::_Vector_base()
+  0.00      0.12     0.00        2     0.00     0.00  std::_Vector_base<double*, std::allocator<double*> >::~_Vector_base()
+  0.00      0.12     0.00        2     0.00     0.00  std::pow(double, int)
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  global constructors keyed to a
+  0.00      0.12     0.00        1     0.00     0.00  PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double)
+  0.00      0.12     0.00        1     0.00     0.00  GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long)
+  0.00      0.12     0.00        1     0.00     0.00  Ocean::Ocean(Height&, WaveModel&, double, double)
+  0.00      0.12     0.00        1     0.00     0.00  Camera::setKeyboard(int, bool)
+  0.00      0.12     0.00        1     0.00     0.00  Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int)
+  0.00      0.12     0.00        1     0.00     0.00  Height::Height(double, double, int, int, double)
+  0.00      0.12     0.00        1     0.00     0.00  Height::Height()
+  0.00      0.12     0.00        1     0.00     0.00  Height::operator=(Height const&)
+  0.00      0.12     0.00        1     0.00     0.00  Window::init(int, int, std::string, int, char**, std::string, int, float)
+  0.00      0.12     0.00        1     0.00     0.00  Window::launch()
+  0.00      0.12     0.00        1     0.00     0.00  WaveModel::operator=(WaveModel const&)
+  0.00      0.12     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::new_allocator()
+  0.00      0.12     0.00        1     0.00     0.00  std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocator()
+  0.00      0.12     0.00        1     0.00     0.00  std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::map()
+  0.00      0.12     0.00        1     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_M_initialize()
+  0.00      0.12     0.00        1     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl()
+  0.00      0.12     0.00        1     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&)
+  0.00      0.12     0.00        1     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::begin()
+  0.00      0.12     0.00        1     0.00     0.00  std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree()
+  0.00      0.12     0.00        1     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 8.33% of 0.12 seconds
+
+index % time    self  children    called     name
+                0.00    0.12     672/672         Window::draw() [2]
+[1]    100.0    0.00    0.12     672         Window::draw_ocean() [1]
+                0.00    0.12     672/672         Ocean::main_computation() [4]
+                0.00    0.00   13440/13440       Ocean::gl_VertexArrayY(int, double*) const [14]
+                0.00    0.00   13440/13440       Ocean::gl_VertexArrayX(int, double*) const [13]
+                0.00    0.00     672/673         Ocean::display(std::ostream&) const [15]
+                0.00    0.00   53760/53800       std::vector<double*, std::allocator<double*> >::operator[](unsigned long) [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.12                 Window::draw() [2]
+                0.00    0.12     672/672         Window::draw_ocean() [1]
+                0.00    0.00     672/672         Camera::translation() [65]
+                0.00    0.00     672/672         Camera::getX() [66]
+                0.00    0.00     672/672         Camera::getY() [67]
+                0.00    0.00     672/672         Camera::getZ() [68]
+                0.00    0.00     672/672         Camera::getSightX() [69]
+                0.00    0.00     672/672         Camera::getSightY() [70]
+                0.00    0.00     672/672         Camera::getSightZ() [71]
+                0.00    0.00     672/672         Window::draw_fps() [72]
+                0.00    0.00       4/4           Window::fps_action() [119]
+-----------------------------------------------
+                0.02    0.10     672/672         Ocean::main_computation() [4]
+[3]     98.5    0.02    0.10     672         PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.08     672/672         ifft(DvectorComplex&) [6]
+                0.01    0.00 1612800/2150400     square(double) [9]
+                0.00    0.00  537600/537600      dot(Dvector const&, Dvector const&) [10]
+                0.00    0.00 1357440/4610320     Dvector::operator()(int) const [8]
+                0.00    0.00  268800/268800      Dvector::norm() const [11]
+                0.00    0.00  268800/833280      Height::operator()(int, int) const [12]
+                0.00    0.00     672/343392      DvectorComplex::DvectorComplex(int, double, double) [7]
+                0.00    0.00  537600/537600      _ZSt4sqrtIiEN9__gnu_cxx11__enable_ifIXsr12__is_integerIT_EE7__valueEdE6__typeES2_ [30]
+                0.00    0.00  268800/2558976     DvectorComplex::set_Real(int, double) [28]
+                0.00    0.00  268800/2827776     DvectorComplex::set_Im(int, double) [26]
+                0.00    0.00  268800/5591040     DvectorComplex::get_Real(int) const [25]
+                0.00    0.00    1344/1348        Dvector::Dvector(int) [63]
+                0.00    0.00    1344/1364        Dvector::~Dvector() [62]
+                0.00    0.00     672/672         Dvector::fillNormal() [73]
+                0.00    0.00     672/343392      DvectorComplex::~DvectorComplex() [32]
+-----------------------------------------------
+                0.00    0.12     672/672         Window::draw_ocean() [1]
+[4]     98.5    0.00    0.12     672         Ocean::main_computation() [4]
+                0.02    0.10     672/672         PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00     672/311073      Ocean::getNx() const [33]
+                0.00    0.00     672/297633      Ocean::getNy() const [35]
+                0.00    0.00     672/1513        Ocean::get_lx() const [58]
+                0.00    0.00     672/1513        Ocean::get_ly() const [59]
+                0.00    0.00     672/672         Ocean::get_time() const [74]
+-----------------------------------------------
+                              342720             fft(DvectorComplex&) [5]
+                0.05    0.03     672/672         ifft(DvectorComplex&) [6]
+[5]     66.6    0.05    0.03     672+342720  fft(DvectorComplex&) [5]
+                0.03    0.00  342720/343392      DvectorComplex::DvectorComplex(int, double, double) [7]
+                0.00    0.00 3032064/5591040     DvectorComplex::get_Real(int) const [25]
+                0.00    0.00 3032064/5591040     DvectorComplex::get_Im(int) const [24]
+                0.00    0.00 2021376/2021376     DvectorComplex::cp_val(int, int, DvectorComplex const&) [29]
+                0.00    0.00 2021376/2558976     DvectorComplex::set_Real(int, double) [28]
+                0.00    0.00 2021376/2827776     DvectorComplex::set_Im(int, double) [26]
+                0.00    0.00  343392/344064      DvectorComplex::getDim() [31]
+                0.00    0.00  342720/343392      DvectorComplex::~DvectorComplex() [32]
+                              342720             fft(DvectorComplex&) [5]
+-----------------------------------------------
+                0.00    0.08     672/672         PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[6]     66.6    0.00    0.08     672         ifft(DvectorComplex&) [6]
+                0.05    0.03     672/672         fft(DvectorComplex&) [5]
+                0.00    0.00  537600/5591040     DvectorComplex::get_Im(int) const [24]
+                0.00    0.00  537600/2827776     DvectorComplex::set_Im(int, double) [26]
+                0.00    0.00  268800/5591040     DvectorComplex::get_Real(int) const [25]
+                0.00    0.00  268800/2558976     DvectorComplex::set_Real(int, double) [28]
+                0.00    0.00     672/344064      DvectorComplex::getDim() [31]
+-----------------------------------------------
+                0.00    0.00     672/343392      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.03    0.00  342720/343392      fft(DvectorComplex&) [5]
+[7]     25.0    0.03    0.00  343392         DvectorComplex::DvectorComplex(int, double, double) [7]
+-----------------------------------------------
+                0.00    0.00  269200/4610320     Height::display(std::ostream&) const [16]
+                0.00    0.00  833280/4610320     Height::operator()(int, int) const [12]
+                0.00    0.00 1357440/4610320     PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00 2150400/4610320     dot(Dvector const&, Dvector const&) [10]
+[8]      8.3    0.01    0.00 4610320         Dvector::operator()(int) const [8]
+-----------------------------------------------
+                0.00    0.00  537600/2150400     Dvector::norm() const [11]
+                0.01    0.00 1612800/2150400     PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[9]      8.3    0.01    0.00 2150400         square(double) [9]
+-----------------------------------------------
+                0.00    0.00  537600/537600      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[10]     3.9    0.00    0.00  537600         dot(Dvector const&, Dvector const&) [10]
+                0.00    0.00 2150400/4610320     Dvector::operator()(int) const [8]
+                0.00    0.00 2688000/2688015     Dvector::size() const [27]
+-----------------------------------------------
+                0.00    0.00  268800/268800      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[11]     2.1    0.00    0.00  268800         Dvector::norm() const [11]
+                0.00    0.00  537600/2150400     square(double) [9]
+-----------------------------------------------
+                0.00    0.00  268800/833280      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00  282240/833280      Ocean::gl_VertexArrayX(int, double*) const [13]
+                0.00    0.00  282240/833280      Ocean::gl_VertexArrayY(int, double*) const [14]
+[12]     1.5    0.00    0.00  833280         Height::operator()(int, int) const [12]
+                0.00    0.00  833280/4610320     Dvector::operator()(int) const [8]
+-----------------------------------------------
+                0.00    0.00   13440/13440       Window::draw_ocean() [1]
+[13]     0.5    0.00    0.00   13440         Ocean::gl_VertexArrayX(int, double*) const [13]
+                0.00    0.00  282240/833280      Height::operator()(int, int) const [12]
+                0.00    0.00  309120/311073      Ocean::getNx() const [33]
+                0.00    0.00  282240/282244      _ZSt3powIiiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_ [37]
+-----------------------------------------------
+                0.00    0.00   13440/13440       Window::draw_ocean() [1]
+[14]     0.5    0.00    0.00   13440         Ocean::gl_VertexArrayY(int, double*) const [14]
+                0.00    0.00  282240/833280      Height::operator()(int, int) const [12]
+                0.00    0.00  295680/297633      Ocean::getNy() const [35]
+-----------------------------------------------
+                0.00    0.00       1/673         main [17]
+                0.00    0.00     672/673         Window::draw_ocean() [1]
+[15]     0.5    0.00    0.00     673         Ocean::display(std::ostream&) const [15]
+                0.00    0.00     673/673         Height::display(std::ostream&) const [16]
+                0.00    0.00     673/673         PhilipsWaveModel::display(std::ostream&) const [64]
+-----------------------------------------------
+                0.00    0.00     673/673         Ocean::display(std::ostream&) const [15]
+[16]     0.5    0.00    0.00     673         Height::display(std::ostream&) const [16]
+                0.00    0.00  269200/4610320     Dvector::operator()(int) const [8]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     0.0    0.00    0.00                 main [17]
+                0.00    0.00       1/673         Ocean::display(std::ostream&) const [15]
+                0.00    0.00       5/12          Dvector::Dvector(Dvector const&) [105]
+                0.00    0.00       5/1364        Dvector::~Dvector() [62]
+                0.00    0.00       3/3           GerstnerWave::GerstnerWave() [142]
+                0.00    0.00       3/3           GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+                0.00    0.00       3/3           GerstnerWave::operator=(GerstnerWave const&) [144]
+                0.00    0.00       3/3           GerstnerWave::~GerstnerWave() [143]
+                0.00    0.00       1/2           Dvector::Dvector(int, double) [145]
+                0.00    0.00       1/1           GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [168]
+                0.00    0.00       1/1           PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [167]
+                0.00    0.00       1/1           Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/1           Ocean::Ocean(Height&, WaveModel&, double, double) [169]
+                0.00    0.00       1/1           Window::init(int, int, std::string, int, char**, std::string, int, float) [175]
+                0.00    0.00       1/1           Window::launch() [176]
+-----------------------------------------------
+                0.00    0.00  537600/5591040     ifft(DvectorComplex&) [6]
+                0.00    0.00 2021376/5591040     DvectorComplex::cp_val(int, int, DvectorComplex const&) [29]
+                0.00    0.00 3032064/5591040     fft(DvectorComplex&) [5]
+[24]     0.0    0.00    0.00 5591040         DvectorComplex::get_Im(int) const [24]
+-----------------------------------------------
+                0.00    0.00  268800/5591040     ifft(DvectorComplex&) [6]
+                0.00    0.00  268800/5591040     PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00 2021376/5591040     DvectorComplex::cp_val(int, int, DvectorComplex const&) [29]
+                0.00    0.00 3032064/5591040     fft(DvectorComplex&) [5]
+[25]     0.0    0.00    0.00 5591040         DvectorComplex::get_Real(int) const [25]
+-----------------------------------------------
+                0.00    0.00  268800/2827776     PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00  537600/2827776     ifft(DvectorComplex&) [6]
+                0.00    0.00 2021376/2827776     fft(DvectorComplex&) [5]
+[26]     0.0    0.00    0.00 2827776         DvectorComplex::set_Im(int, double) [26]
+-----------------------------------------------
+                0.00    0.00      15/2688015     Dvector::operator=(Dvector const&) [99]
+                0.00    0.00 2688000/2688015     dot(Dvector const&, Dvector const&) [10]
+[27]     0.0    0.00    0.00 2688015         Dvector::size() const [27]
+-----------------------------------------------
+                0.00    0.00  268800/2558976     ifft(DvectorComplex&) [6]
+                0.00    0.00  268800/2558976     PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00 2021376/2558976     fft(DvectorComplex&) [5]
+[28]     0.0    0.00    0.00 2558976         DvectorComplex::set_Real(int, double) [28]
+-----------------------------------------------
+                0.00    0.00 2021376/2021376     fft(DvectorComplex&) [5]
+[29]     0.0    0.00    0.00 2021376         DvectorComplex::cp_val(int, int, DvectorComplex const&) [29]
+                0.00    0.00 2021376/5591040     DvectorComplex::get_Real(int) const [25]
+                0.00    0.00 2021376/5591040     DvectorComplex::get_Im(int) const [24]
+-----------------------------------------------
+                0.00    0.00  537600/537600      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[30]     0.0    0.00    0.00  537600         _ZSt4sqrtIiEN9__gnu_cxx11__enable_ifIXsr12__is_integerIT_EE7__valueEdE6__typeES2_ [30]
+-----------------------------------------------
+                0.00    0.00     672/344064      ifft(DvectorComplex&) [6]
+                0.00    0.00  343392/344064      fft(DvectorComplex&) [5]
+[31]     0.0    0.00    0.00  344064         DvectorComplex::getDim() [31]
+-----------------------------------------------
+                0.00    0.00     672/343392      PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+                0.00    0.00  342720/343392      fft(DvectorComplex&) [5]
+[32]     0.0    0.00    0.00  343392         DvectorComplex::~DvectorComplex() [32]
+-----------------------------------------------
+                0.00    0.00       1/311073      Window::launch() [176]
+                0.00    0.00     420/311073      Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00     672/311073      Ocean::main_computation() [4]
+                0.00    0.00     860/311073      Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00  309120/311073      Ocean::gl_VertexArrayX(int, double*) const [13]
+[33]     0.0    0.00    0.00  311073         Ocean::getNx() const [33]
+                0.00    0.00  311073/311073      Height::getn_x() const [34]
+-----------------------------------------------
+                0.00    0.00  311073/311073      Ocean::getNx() const [33]
+[34]     0.0    0.00    0.00  311073         Height::getn_x() const [34]
+-----------------------------------------------
+                0.00    0.00       1/297633      Window::launch() [176]
+                0.00    0.00     420/297633      Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00     672/297633      Ocean::main_computation() [4]
+                0.00    0.00     860/297633      Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00  295680/297633      Ocean::gl_VertexArrayY(int, double*) const [14]
+[35]     0.0    0.00    0.00  297633         Ocean::getNy() const [35]
+                0.00    0.00  297633/297633      Height::getn_y() const [36]
+-----------------------------------------------
+                0.00    0.00  297633/297633      Ocean::getNy() const [35]
+[36]     0.0    0.00    0.00  297633         Height::getn_y() const [36]
+-----------------------------------------------
+                0.00    0.00       4/282244      Window::fps_action() [119]
+                0.00    0.00  282240/282244      Ocean::gl_VertexArrayX(int, double*) const [13]
+[37]     0.0    0.00    0.00  282244         _ZSt3powIiiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_ [37]
+-----------------------------------------------
+                0.00    0.00      40/53800       Window::launch() [176]
+                0.00    0.00   53760/53800       Window::draw_ocean() [1]
+[38]     0.0    0.00    0.00   53800         std::vector<double*, std::allocator<double*> >::operator[](unsigned long) [38]
+-----------------------------------------------
+                0.00    0.00       3/8747        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+                0.00    0.00       3/8747        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+                0.00    0.00    2688/8747        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+                0.00    0.00    6053/8747        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+[39]     0.0    0.00    0.00    8747         std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [39]
+-----------------------------------------------
+                0.00    0.00       3/6066        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+                0.00    0.00       4/6066        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [138]
+                0.00    0.00       6/6066        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*) [117]
+                0.00    0.00    6053/6066        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [41]
+[40]     0.0    0.00    0.00    6066         std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [40]
+-----------------------------------------------
+                0.00    0.00    6053/6053        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+[41]     0.0    0.00    0.00    6053         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [41]
+                0.00    0.00    6053/6066        std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [40]
+                0.00    0.00    6053/6053        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [42]
+-----------------------------------------------
+                0.00    0.00    6053/6053        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [41]
+[42]     0.0    0.00    0.00    6053         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [42]
+-----------------------------------------------
+                0.00    0.00       1/5394        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00       1/5394        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::begin() [184]
+                0.00    0.00       4/5394        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+                0.00    0.00       4/5394        std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_M_const_cast() const [125]
+                0.00    0.00    2692/5394        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [55]
+                0.00    0.00    2692/5394        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+[43]     0.0    0.00    0.00    5394         std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+-----------------------------------------------
+                0.00    0.00    5380/5380        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[44]     0.0    0.00    0.00    5380         std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator*() const [44]
+-----------------------------------------------
+                0.00    0.00    3360/3360        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+[45]     0.0    0.00    0.00    3360         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_left(std::_Rb_tree_node_base*) [45]
+-----------------------------------------------
+                0.00    0.00       1/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00       4/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+                0.00    0.00       4/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+                0.00    0.00    2692/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [53]
+[46]     0.0    0.00    0.00    2701         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end() [46]
+-----------------------------------------------
+                0.00    0.00       1/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00    2692/2693        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[47]     0.0    0.00    0.00    2693         std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator==(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) const [47]
+-----------------------------------------------
+                0.00    0.00       1/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00    2692/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [53]
+[48]     0.0    0.00    0.00    2693         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_begin() [48]
+-----------------------------------------------
+                0.00    0.00    2693/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+[49]     0.0    0.00    0.00    2693         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_right(std::_Rb_tree_node_base*) [49]
+-----------------------------------------------
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[50]     0.0    0.00    0.00    2692         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [50]
+                0.00    0.00    2692/2692        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [53]
+-----------------------------------------------
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[51]     0.0    0.00    0.00    2692         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [51]
+                0.00    0.00    2692/2692        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [55]
+-----------------------------------------------
+                0.00    0.00       4/2692        Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int) [171]
+                0.00    0.00    2688/2692        Camera::translation() [65]
+[52]     0.0    0.00    0.00    2692         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+                0.00    0.00    5380/5380        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator*() const [44]
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [50]
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [51]
+                0.00    0.00    2692/2693        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator==(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) const [47]
+                0.00    0.00    2688/2688        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [56]
+                0.00    0.00    2688/8747        std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [39]
+                0.00    0.00       4/4           std::pair<Camera::DIR const, int>::pair(Camera::DIR const&, int const&) [133]
+                0.00    0.00       4/4           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [132]
+-----------------------------------------------
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [50]
+[53]     0.0    0.00    0.00    2692         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [53]
+                0.00    0.00    2692/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_begin() [48]
+                0.00    0.00    2692/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end() [46]
+                0.00    0.00    2692/2692        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+-----------------------------------------------
+                0.00    0.00    2692/2692        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&) [53]
+[54]     0.0    0.00    0.00    2692         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&) [54]
+                0.00    0.00    6053/6053        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*) [41]
+                0.00    0.00    6053/8747        std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [39]
+                0.00    0.00    3360/3360        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_left(std::_Rb_tree_node_base*) [45]
+                0.00    0.00    2693/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_right(std::_Rb_tree_node_base*) [49]
+                0.00    0.00    2692/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+-----------------------------------------------
+                0.00    0.00    2692/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [51]
+[55]     0.0    0.00    0.00    2692         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end() [55]
+                0.00    0.00    2692/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+-----------------------------------------------
+                0.00    0.00    2688/2688        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[56]     0.0    0.00    0.00    2688         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [56]
+                0.00    0.00    2688/2688        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [57]
+-----------------------------------------------
+                0.00    0.00    2688/2688        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [56]
+[57]     0.0    0.00    0.00    2688         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [57]
+-----------------------------------------------
+                0.00    0.00       1/1513        Window::reshape(int, int) [204]
+                0.00    0.00     420/1513        Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00     420/1513        Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00     672/1513        Ocean::main_computation() [4]
+[58]     0.0    0.00    0.00    1513         Ocean::get_lx() const [58]
+                0.00    0.00    1513/1513        Height::getL_x() const [60]
+-----------------------------------------------
+                0.00    0.00       1/1513        Window::reshape(int, int) [204]
+                0.00    0.00     420/1513        Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00     420/1513        Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00     672/1513        Ocean::main_computation() [4]
+[59]     0.0    0.00    0.00    1513         Ocean::get_ly() const [59]
+                0.00    0.00    1513/1513        Height::getL_y() const [61]
+-----------------------------------------------
+                0.00    0.00    1513/1513        Ocean::get_lx() const [58]
+[60]     0.0    0.00    0.00    1513         Height::getL_x() const [60]
+-----------------------------------------------
+                0.00    0.00    1513/1513        Ocean::get_ly() const [59]
+[61]     0.0    0.00    0.00    1513         Height::getL_y() const [61]
+-----------------------------------------------
+                0.00    0.00       1/1364        Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/1364        Height::Height() [173]
+                0.00    0.00       1/1364        GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [168]
+                0.00    0.00       1/1364        PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [167]
+                0.00    0.00       2/1364        WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       3/1364        GerstnerWave::GerstnerWave() [142]
+                0.00    0.00       3/1364        GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+                0.00    0.00       3/1364        GerstnerWave::~GerstnerWave() [143]
+                0.00    0.00       5/1364        main [17]
+                0.00    0.00    1344/1364        PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[62]     0.0    0.00    0.00    1364         Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1348        Height::Height() [173]
+                0.00    0.00       3/1348        GerstnerWave::GerstnerWave() [142]
+                0.00    0.00    1344/1348        PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[63]     0.0    0.00    0.00    1348         Dvector::Dvector(int) [63]
+-----------------------------------------------
+                0.00    0.00     673/673         Ocean::display(std::ostream&) const [15]
+[64]     0.0    0.00    0.00     673         PhilipsWaveModel::display(std::ostream&) const [64]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[65]     0.0    0.00    0.00     672         Camera::translation() [65]
+                0.00    0.00    2688/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[66]     0.0    0.00    0.00     672         Camera::getX() [66]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[67]     0.0    0.00    0.00     672         Camera::getY() [67]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[68]     0.0    0.00    0.00     672         Camera::getZ() [68]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[69]     0.0    0.00    0.00     672         Camera::getSightX() [69]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[70]     0.0    0.00    0.00     672         Camera::getSightY() [70]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[71]     0.0    0.00    0.00     672         Camera::getSightZ() [71]
+-----------------------------------------------
+                0.00    0.00     672/672         Window::draw() [2]
+[72]     0.0    0.00    0.00     672         Window::draw_fps() [72]
+-----------------------------------------------
+                0.00    0.00     672/672         PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [3]
+[73]     0.0    0.00    0.00     672         Dvector::fillNormal() [73]
+-----------------------------------------------
+                0.00    0.00     672/672         Ocean::main_computation() [4]
+[74]     0.0    0.00    0.00     672         Ocean::get_time() const [74]
+-----------------------------------------------
+                0.00    0.00      48/120         std::_Miter_base<double**>::iterator_type std::__miter_base<double**>(double**) [79]
+                0.00    0.00      72/120         std::_Niter_base<double**>::iterator_type std::__niter_base<double**>(double**) [76]
+[75]     0.0    0.00    0.00     120         std::_Iter_base<double**, false>::_S_base(double**) [75]
+-----------------------------------------------
+                0.00    0.00      72/72          double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**) [92]
+[76]     0.0    0.00    0.00      72         std::_Niter_base<double**>::iterator_type std::__niter_base<double**>(double**) [76]
+                0.00    0.00      72/120         std::_Iter_base<double**, false>::_S_base(double**) [75]
+-----------------------------------------------
+                0.00    0.00      24/48          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+                0.00    0.00      24/48          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::difference_type __gnu_cxx::operator-<double**, std::vector<double*, std::allocator<double*> > >(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&, __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&) [108]
+[77]     0.0    0.00    0.00      48         __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::base() const [77]
+-----------------------------------------------
+                0.00    0.00      48/48          std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [109]
+[78]     0.0    0.00    0.00      48         std::vector<double*, std::allocator<double*> >::size() const [78]
+-----------------------------------------------
+                0.00    0.00      48/48          double** std::copy<double**, double**>(double**, double**, double**) [96]
+[79]     0.0    0.00    0.00      48         std::_Miter_base<double**>::iterator_type std::__miter_base<double**>(double**) [79]
+                0.00    0.00      48/120         std::_Iter_base<double**, false>::_S_base(double**) [75]
+-----------------------------------------------
+                0.00    0.00      40/40          void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&) [81]
+[80]     0.0    0.00    0.00      40         __gnu_cxx::new_allocator<double*>::construct(double**, double* const&) [80]
+-----------------------------------------------
+                0.00    0.00      12/40          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+                0.00    0.00      28/40          std::vector<double*, std::allocator<double*> >::push_back(double* const&) [82]
+[81]     0.0    0.00    0.00      40         void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&) [81]
+                0.00    0.00      40/40          __gnu_cxx::new_allocator<double*>::construct(double**, double* const&) [80]
+-----------------------------------------------
+                0.00    0.00      40/40          Window::launch() [176]
+[82]     0.0    0.00    0.00      40         std::vector<double*, std::allocator<double*> >::push_back(double* const&) [82]
+                0.00    0.00      28/40          void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&) [81]
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::end() [112]
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+-----------------------------------------------
+                0.00    0.00       2/38          std::vector<double*, std::allocator<double*> >::~vector() [272]
+                0.00    0.00      36/38          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[83]     0.0    0.00    0.00      38         std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() [83]
+-----------------------------------------------
+                0.00    0.00      12/36          __gnu_cxx::new_allocator<double*>::allocate(unsigned long, void const*) [107]
+                0.00    0.00      24/36          __gnu_cxx::__alloc_traits<std::allocator<double*> >::max_size(std::allocator<double*> const&) [85]
+[84]     0.0    0.00    0.00      36         __gnu_cxx::new_allocator<double*>::max_size() const [84]
+-----------------------------------------------
+                0.00    0.00      24/24          std::vector<double*, std::allocator<double*> >::max_size() const [88]
+[85]     0.0    0.00    0.00      24         __gnu_cxx::__alloc_traits<std::allocator<double*> >::max_size(std::allocator<double*> const&) [85]
+                0.00    0.00      24/36          __gnu_cxx::new_allocator<double*>::max_size() const [84]
+-----------------------------------------------
+                0.00    0.00      12/24          std::vector<double*, std::allocator<double*> >::end() [112]
+                0.00    0.00      12/24          std::vector<double*, std::allocator<double*> >::begin() [113]
+[86]     0.0    0.00    0.00      24         __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::__normal_iterator(double** const&) [86]
+-----------------------------------------------
+                0.00    0.00      24/24          std::vector<double*, std::allocator<double*> >::max_size() const [88]
+[87]     0.0    0.00    0.00      24         std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() const [87]
+-----------------------------------------------
+                0.00    0.00      24/24          std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [109]
+[88]     0.0    0.00    0.00      24         std::vector<double*, std::allocator<double*> >::max_size() const [88]
+                0.00    0.00      24/24          __gnu_cxx::__alloc_traits<std::allocator<double*> >::max_size(std::allocator<double*> const&) [85]
+                0.00    0.00      24/24          std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() const [87]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::__copy_move_a<false, double**, double**>(double**, double**, double**) [91]
+[89]     0.0    0.00    0.00      24         double** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double*>(double* const*, double* const*, double**) [89]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::uninitialized_copy<double**, double**>(double**, double**, double**) [93]
+[90]     0.0    0.00    0.00      24         double** std::__uninitialized_copy<true>::__uninit_copy<double**, double**>(double**, double**, double**) [90]
+                0.00    0.00      24/24          double** std::copy<double**, double**>(double**, double**, double**) [96]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**) [92]
+[91]     0.0    0.00    0.00      24         double** std::__copy_move_a<false, double**, double**>(double**, double**, double**) [91]
+                0.00    0.00      24/24          double** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double*>(double* const*, double* const*, double**) [89]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::copy<double**, double**>(double**, double**, double**) [96]
+[92]     0.0    0.00    0.00      24         double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**) [92]
+                0.00    0.00      72/72          std::_Niter_base<double**>::iterator_type std::__niter_base<double**>(double**) [76]
+                0.00    0.00      24/24          double** std::__copy_move_a<false, double**, double**>(double**, double**, double**) [91]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::__uninitialized_copy_a<double**, double**, double*>(double**, double**, double**, std::allocator<double*>&) [94]
+[93]     0.0    0.00    0.00      24         double** std::uninitialized_copy<double**, double**>(double**, double**, double**) [93]
+                0.00    0.00      24/24          double** std::__uninitialized_copy<true>::__uninit_copy<double**, double**>(double**, double**, double**) [90]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::__uninitialized_move_if_noexcept_a<double**, double**, std::allocator<double*> >(double**, double**, double**, std::allocator<double*>&) [95]
+[94]     0.0    0.00    0.00      24         double** std::__uninitialized_copy_a<double**, double**, double*>(double**, double**, double**, std::allocator<double*>&) [94]
+                0.00    0.00      24/24          double** std::uninitialized_copy<double**, double**>(double**, double**, double**) [93]
+-----------------------------------------------
+                0.00    0.00      24/24          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[95]     0.0    0.00    0.00      24         double** std::__uninitialized_move_if_noexcept_a<double**, double**, std::allocator<double*> >(double**, double**, double**, std::allocator<double*>&) [95]
+                0.00    0.00      24/24          double** std::__uninitialized_copy_a<double**, double**, double*>(double**, double**, double**, std::allocator<double*>&) [94]
+-----------------------------------------------
+                0.00    0.00      24/24          double** std::__uninitialized_copy<true>::__uninit_copy<double**, double**>(double**, double**, double**) [90]
+[96]     0.0    0.00    0.00      24         double** std::copy<double**, double**>(double**, double**, double**) [96]
+                0.00    0.00      48/48          std::_Miter_base<double**>::iterator_type std::__miter_base<double**>(double**) [79]
+                0.00    0.00      24/24          double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**) [92]
+-----------------------------------------------
+                0.00    0.00      20/20          Window::launch() [176]
+[97]     0.0    0.00    0.00      20         Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00     860/311073      Ocean::getNx() const [33]
+                0.00    0.00     420/1513        Ocean::get_lx() const [58]
+                0.00    0.00     420/297633      Ocean::getNy() const [35]
+                0.00    0.00     420/1513        Ocean::get_ly() const [59]
+-----------------------------------------------
+                0.00    0.00      20/20          Window::launch() [176]
+[98]     0.0    0.00    0.00      20         Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00     860/297633      Ocean::getNy() const [35]
+                0.00    0.00     420/311073      Ocean::getNx() const [33]
+                0.00    0.00     420/1513        Ocean::get_lx() const [58]
+                0.00    0.00     420/1513        Ocean::get_ly() const [59]
+-----------------------------------------------
+                0.00    0.00       1/15          Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/15          Height::operator=(Height const&) [174]
+                0.00    0.00       1/15          Height::Height() [173]
+                0.00    0.00       1/15          WaveModel::operator=(WaveModel const&) [177]
+                0.00    0.00       2/15          WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       3/15          GerstnerWave::GerstnerWave() [142]
+                0.00    0.00       3/15          GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+                0.00    0.00       3/15          GerstnerWave::operator=(GerstnerWave const&) [144]
+[99]     0.0    0.00    0.00      15         Dvector::operator=(Dvector const&) [99]
+                0.00    0.00      15/2688015     Dvector::size() const [27]
+-----------------------------------------------
+                0.00    0.00      14/14          Window::mouseMove(int, int) [206]
+[100]    0.0    0.00    0.00      14         Camera::rotation(int, int) [100]
+-----------------------------------------------
+                0.00    0.00      14/14          void std::_Destroy<double**>(double**, double**) [103]
+[101]    0.0    0.00    0.00      14         void std::_Destroy_aux<true>::__destroy<double**>(double**, double**) [101]
+-----------------------------------------------
+                0.00    0.00       2/14          std::_Vector_base<double*, std::allocator<double*> >::~_Vector_base() [154]
+                0.00    0.00      12/14          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[102]    0.0    0.00    0.00      14         std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long) [102]
+                0.00    0.00      12/12          __gnu_cxx::new_allocator<double*>::deallocate(double**, unsigned long) [106]
+-----------------------------------------------
+                0.00    0.00      14/14          void std::_Destroy<double**, double*>(double**, double**, std::allocator<double*>&) [104]
+[103]    0.0    0.00    0.00      14         void std::_Destroy<double**>(double**, double**) [103]
+                0.00    0.00      14/14          void std::_Destroy_aux<true>::__destroy<double**>(double**, double**) [101]
+-----------------------------------------------
+                0.00    0.00       2/14          std::vector<double*, std::allocator<double*> >::~vector() [272]
+                0.00    0.00      12/14          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[104]    0.0    0.00    0.00      14         void std::_Destroy<double**, double*>(double**, double**, std::allocator<double*>&) [104]
+                0.00    0.00      14/14          void std::_Destroy<double**>(double**, double**) [103]
+-----------------------------------------------
+                0.00    0.00       1/12          GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [168]
+                0.00    0.00       1/12          PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [167]
+                0.00    0.00       2/12          WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       3/12          GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+                0.00    0.00       5/12          main [17]
+[105]    0.0    0.00    0.00      12         Dvector::Dvector(Dvector const&) [105]
+-----------------------------------------------
+                0.00    0.00      12/12          std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long) [102]
+[106]    0.0    0.00    0.00      12         __gnu_cxx::new_allocator<double*>::deallocate(double**, unsigned long) [106]
+-----------------------------------------------
+                0.00    0.00      12/12          std::_Vector_base<double*, std::allocator<double*> >::_M_allocate(unsigned long) [110]
+[107]    0.0    0.00    0.00      12         __gnu_cxx::new_allocator<double*>::allocate(unsigned long, void const*) [107]
+                0.00    0.00      12/36          __gnu_cxx::new_allocator<double*>::max_size() const [84]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[108]    0.0    0.00    0.00      12         __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::difference_type __gnu_cxx::operator-<double**, std::vector<double*, std::allocator<double*> > >(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&, __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&) [108]
+                0.00    0.00      24/48          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::base() const [77]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[109]    0.0    0.00    0.00      12         std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [109]
+                0.00    0.00      48/48          std::vector<double*, std::allocator<double*> >::size() const [78]
+                0.00    0.00      24/24          std::vector<double*, std::allocator<double*> >::max_size() const [88]
+                0.00    0.00      12/12          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [114]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[110]    0.0    0.00    0.00      12         std::_Vector_base<double*, std::allocator<double*> >::_M_allocate(unsigned long) [110]
+                0.00    0.00      12/12          __gnu_cxx::new_allocator<double*>::allocate(unsigned long, void const*) [107]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::push_back(double* const&) [82]
+[111]    0.0    0.00    0.00      12         std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+                0.00    0.00      36/38          std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() [83]
+                0.00    0.00      24/48          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::base() const [77]
+                0.00    0.00      24/24          double** std::__uninitialized_move_if_noexcept_a<double**, double**, std::allocator<double*> >(double**, double**, double**, std::allocator<double*>&) [95]
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [109]
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::begin() [113]
+                0.00    0.00      12/12          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::difference_type __gnu_cxx::operator-<double**, std::vector<double*, std::allocator<double*> > >(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&, __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&) [108]
+                0.00    0.00      12/12          std::_Vector_base<double*, std::allocator<double*> >::_M_allocate(unsigned long) [110]
+                0.00    0.00      12/40          void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&) [81]
+                0.00    0.00      12/14          void std::_Destroy<double**, double*>(double**, double**, std::allocator<double*>&) [104]
+                0.00    0.00      12/14          std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long) [102]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::push_back(double* const&) [82]
+[112]    0.0    0.00    0.00      12         std::vector<double*, std::allocator<double*> >::end() [112]
+                0.00    0.00      12/24          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::__normal_iterator(double** const&) [86]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&) [111]
+[113]    0.0    0.00    0.00      12         std::vector<double*, std::allocator<double*> >::begin() [113]
+                0.00    0.00      12/24          __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::__normal_iterator(double** const&) [86]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [109]
+[114]    0.0    0.00    0.00      12         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [114]
+-----------------------------------------------
+                0.00    0.00       1/10          Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/10          Height::Height() [173]
+                0.00    0.00       2/10          WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       3/10          GerstnerWave::GerstnerWave() [142]
+                0.00    0.00       3/10          GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+[115]    0.0    0.00    0.00      10         Dvector::Dvector() [115]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+[116]    0.0    0.00    0.00       6         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_rightmost() [116]
+-----------------------------------------------
+                0.00    0.00       3/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+                0.00    0.00       3/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+[117]    0.0    0.00    0.00       6         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*) [117]
+                0.00    0.00       6/6066        std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [40]
+                0.00    0.00       6/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node_base const*) [118]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*) [117]
+[118]    0.0    0.00    0.00       6         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node_base const*) [118]
+-----------------------------------------------
+                0.00    0.00       4/4           Window::draw() [2]
+[119]    0.0    0.00    0.00       4         Window::fps_action() [119]
+                0.00    0.00       4/282244      _ZSt3powIiiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_ [37]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_node() [136]
+[120]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocate(unsigned long, void const*) [120]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::max_size() const [124]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+[121]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::construct(std::pair<Camera::DIR const, int>*, std::pair<Camera::DIR const, int> const&) [121]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<std::pair<Camera::DIR const, int> >::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >(std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > > const&) [129]
+[122]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::new_allocator() [122]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<std::pair<Camera::DIR const, int> >::~allocator() [130]
+[123]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::~new_allocator() [123]
+-----------------------------------------------
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocate(unsigned long, void const*) [120]
+[124]    0.0    0.00    0.00       4         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::max_size() const [124]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+[125]    0.0    0.00    0.00       4         std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_M_const_cast() const [125]
+                0.00    0.00       4/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+[126]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const [126]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_Node_allocator() const [127]
+                0.00    0.00       4/4           std::allocator<std::pair<Camera::DIR const, int> >::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >(std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > > const&) [129]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const [126]
+[127]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_Node_allocator() const [127]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+[128]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::size() const [128]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const [126]
+[129]    0.0    0.00    0.00       4         std::allocator<std::pair<Camera::DIR const, int> >::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >(std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > > const&) [129]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::new_allocator() [122]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+[130]    0.0    0.00    0.00       4         std::allocator<std::pair<Camera::DIR const, int> >::~allocator() [130]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::~new_allocator() [123]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [132]
+[131]    0.0    0.00    0.00       4         std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) [131]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[132]    0.0    0.00    0.00       4         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [132]
+                0.00    0.00       4/4           std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) [131]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [138]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+[133]    0.0    0.00    0.00       4         std::pair<Camera::DIR const, int>::pair(Camera::DIR const&, int const&) [133]
+-----------------------------------------------
+                0.00    0.00       1/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00       3/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+[134]    0.0    0.00    0.00       4         std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [134]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [138]
+[135]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+                0.00    0.00       4/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end() [46]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+                0.00    0.00       4/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+                0.00    0.00       3/6066        std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [40]
+                0.00    0.00       3/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*) [117]
+                0.00    0.00       3/8747        std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [39]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+[136]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_node() [136]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocate(unsigned long, void const*) [120]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+[137]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_node() [136]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const [126]
+                0.00    0.00       4/4           std::pair<Camera::DIR const, int>* std::__addressof<std::pair<Camera::DIR const, int> >(std::pair<Camera::DIR const, int>&) [140]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::construct(std::pair<Camera::DIR const, int>*, std::pair<Camera::DIR const, int> const&) [121]
+                0.00    0.00       4/4           std::allocator<std::pair<Camera::DIR const, int> >::~allocator() [130]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [132]
+[138]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [138]
+                0.00    0.00       4/6066        std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [40]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&) [135]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&) [138]
+[139]    0.0    0.00    0.00       4         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+                0.00    0.00       6/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_rightmost() [116]
+                0.00    0.00       4/4           std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_M_const_cast() const [125]
+                0.00    0.00       4/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end() [46]
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::size() const [128]
+                0.00    0.00       3/6           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*) [117]
+                0.00    0.00       3/8747        std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [39]
+                0.00    0.00       3/4           std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [134]
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&) [137]
+[140]    0.0    0.00    0.00       4         std::pair<Camera::DIR const, int>* std::__addressof<std::pair<Camera::DIR const, int> >(std::pair<Camera::DIR const, int>&) [140]
+-----------------------------------------------
+                0.00    0.00       3/3           main [17]
+[141]    0.0    0.00    0.00       3         GerstnerWave::GerstnerWave(double, double, double, Dvector) [141]
+                0.00    0.00       3/10          Dvector::Dvector() [115]
+                0.00    0.00       3/12          Dvector::Dvector(Dvector const&) [105]
+                0.00    0.00       3/15          Dvector::operator=(Dvector const&) [99]
+                0.00    0.00       3/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       3/3           main [17]
+[142]    0.0    0.00    0.00       3         GerstnerWave::GerstnerWave() [142]
+                0.00    0.00       3/10          Dvector::Dvector() [115]
+                0.00    0.00       3/1348        Dvector::Dvector(int) [63]
+                0.00    0.00       3/15          Dvector::operator=(Dvector const&) [99]
+                0.00    0.00       3/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       3/3           main [17]
+[143]    0.0    0.00    0.00       3         GerstnerWave::~GerstnerWave() [143]
+                0.00    0.00       3/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       3/3           main [17]
+[144]    0.0    0.00    0.00       3         GerstnerWave::operator=(GerstnerWave const&) [144]
+                0.00    0.00       3/15          Dvector::operator=(Dvector const&) [99]
+-----------------------------------------------
+                0.00    0.00       1/2           Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/2           main [17]
+[145]    0.0    0.00    0.00       2         Dvector::Dvector(int, double) [145]
+-----------------------------------------------
+                0.00    0.00       1/2           GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [168]
+                0.00    0.00       1/2           PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [167]
+[146]    0.0    0.00    0.00       2         WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       2/10          Dvector::Dvector() [115]
+                0.00    0.00       2/12          Dvector::Dvector(Dvector const&) [105]
+                0.00    0.00       2/15          Dvector::operator=(Dvector const&) [99]
+                0.00    0.00       2/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<double*>::allocator() [149]
+[147]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<double*>::new_allocator() [147]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<double*>::~allocator() [150]
+[148]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<double*>::~new_allocator() [148]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::_Vector_impl() [151]
+[149]    0.0    0.00    0.00       2         std::allocator<double*>::allocator() [149]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<double*>::new_allocator() [147]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::~_Vector_impl() [152]
+[150]    0.0    0.00    0.00       2         std::allocator<double*>::~allocator() [150]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<double*>::~new_allocator() [148]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::_Vector_base() [153]
+[151]    0.0    0.00    0.00       2         std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::_Vector_impl() [151]
+                0.00    0.00       2/2           std::allocator<double*>::allocator() [149]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::~_Vector_base() [154]
+[152]    0.0    0.00    0.00       2         std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::~_Vector_impl() [152]
+                0.00    0.00       2/2           std::allocator<double*>::~allocator() [150]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<double*, std::allocator<double*> >::vector() [271]
+[153]    0.0    0.00    0.00       2         std::_Vector_base<double*, std::allocator<double*> >::_Vector_base() [153]
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::_Vector_impl() [151]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<double*, std::allocator<double*> >::~vector() [272]
+[154]    0.0    0.00    0.00       2         std::_Vector_base<double*, std::allocator<double*> >::~_Vector_base() [154]
+                0.00    0.00       2/14          std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long) [102]
+                0.00    0.00       2/2           std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::~_Vector_impl() [152]
+-----------------------------------------------
+                0.00    0.00       2/2           Window::reshape(int, int) [204]
+[155]    0.0    0.00    0.00       2         std::pow(double, int) [155]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[156]    0.0    0.00    0.00       1         global constructors keyed to a [156]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[157]    0.0    0.00    0.00       1         global constructors keyed to a [157]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[158]    0.0    0.00    0.00       1         global constructors keyed to a [158]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[159]    0.0    0.00    0.00       1         global constructors keyed to a [159]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[160]    0.0    0.00    0.00       1         global constructors keyed to a [160]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[161]    0.0    0.00    0.00       1         global constructors keyed to a [161]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[162]    0.0    0.00    0.00       1         global constructors keyed to a [162]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[163]    0.0    0.00    0.00       1         global constructors keyed to a [163]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[164]    0.0    0.00    0.00       1         global constructors keyed to a [164]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[165]    0.0    0.00    0.00       1         global constructors keyed to a [165]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [333]
+[166]    0.0    0.00    0.00       1         global constructors keyed to a [166]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[167]    0.0    0.00    0.00       1         PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [167]
+                0.00    0.00       1/12          Dvector::Dvector(Dvector const&) [105]
+                0.00    0.00       1/2           WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       1/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[168]    0.0    0.00    0.00       1         GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [168]
+                0.00    0.00       1/2           WaveModel::WaveModel(Dvector) [146]
+                0.00    0.00       1/12          Dvector::Dvector(Dvector const&) [105]
+                0.00    0.00       1/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[169]    0.0    0.00    0.00       1         Ocean::Ocean(Height&, WaveModel&, double, double) [169]
+                0.00    0.00       1/1           Height::Height() [173]
+                0.00    0.00       1/1           Height::operator=(Height const&) [174]
+                0.00    0.00       1/1           WaveModel::operator=(WaveModel const&) [177]
+-----------------------------------------------
+                0.00    0.00       1/1           Window::keyboardUp(unsigned char, int, int) [202]
+[170]    0.0    0.00    0.00       1         Camera::setKeyboard(int, bool) [170]
+-----------------------------------------------
+                0.00    0.00       1/1           Window::init(int, int, std::string, int, char**, std::string, int, float) [175]
+[171]    0.0    0.00    0.00       1         Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int) [171]
+                0.00    0.00       4/2692        std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&) [52]
+                0.00    0.00       1/1           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::map() [180]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[172]    0.0    0.00    0.00       1         Height::Height(double, double, int, int, double) [172]
+                0.00    0.00       1/10          Dvector::Dvector() [115]
+                0.00    0.00       1/2           Dvector::Dvector(int, double) [145]
+                0.00    0.00       1/15          Dvector::operator=(Dvector const&) [99]
+                0.00    0.00       1/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Ocean::Ocean(Height&, WaveModel&, double, double) [169]
+[173]    0.0    0.00    0.00       1         Height::Height() [173]
+                0.00    0.00       1/10          Dvector::Dvector() [115]
+                0.00    0.00       1/1348        Dvector::Dvector(int) [63]
+                0.00    0.00       1/15          Dvector::operator=(Dvector const&) [99]
+                0.00    0.00       1/1364        Dvector::~Dvector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Ocean::Ocean(Height&, WaveModel&, double, double) [169]
+[174]    0.0    0.00    0.00       1         Height::operator=(Height const&) [174]
+                0.00    0.00       1/15          Dvector::operator=(Dvector const&) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[175]    0.0    0.00    0.00       1         Window::init(int, int, std::string, int, char**, std::string, int, float) [175]
+                0.00    0.00       1/1           bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [186]
+                0.00    0.00       1/1           Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int) [171]
+-----------------------------------------------
+                0.00    0.00       1/1           main [17]
+[176]    0.0    0.00    0.00       1         Window::launch() [176]
+                0.00    0.00      40/40          std::vector<double*, std::allocator<double*> >::push_back(double* const&) [82]
+                0.00    0.00      40/53800       std::vector<double*, std::allocator<double*> >::operator[](unsigned long) [38]
+                0.00    0.00      20/20          Ocean::init_gl_VertexArrayY(int, double*) const [98]
+                0.00    0.00      20/20          Ocean::init_gl_VertexArrayX(int, double*) const [97]
+                0.00    0.00       1/311073      Ocean::getNx() const [33]
+                0.00    0.00       1/297633      Ocean::getNy() const [35]
+-----------------------------------------------
+                0.00    0.00       1/1           Ocean::Ocean(Height&, WaveModel&, double, double) [169]
+[177]    0.0    0.00    0.00       1         WaveModel::operator=(WaveModel const&) [177]
+                0.00    0.00       1/15          Dvector::operator=(Dvector const&) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocator() [179]
+[178]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::new_allocator() [178]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl() [182]
+[179]    0.0    0.00    0.00       1         std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocator() [179]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::new_allocator() [178]
+-----------------------------------------------
+                0.00    0.00       1/1           Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int) [171]
+[180]    0.0    0.00    0.00       1         std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::map() [180]
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree() [185]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl() [182]
+[181]    0.0    0.00    0.00       1         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_M_initialize() [181]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree() [185]
+[182]    0.0    0.00    0.00       1         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl() [182]
+                0.00    0.00       1/1           std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocator() [179]
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_M_initialize() [181]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&) [139]
+[183]    0.0    0.00    0.00       1         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+                0.00    0.00       1/2693        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_begin() [48]
+                0.00    0.00       1/2701        std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end() [46]
+                0.00    0.00       1/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::begin() [184]
+                0.00    0.00       1/2693        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator==(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) const [47]
+                0.00    0.00       1/4           std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&) [183]
+[184]    0.0    0.00    0.00       1         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::begin() [184]
+                0.00    0.00       1/5394        std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::map() [180]
+[185]    0.0    0.00    0.00       1         std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree() [185]
+                0.00    0.00       1/1           std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl() [182]
+-----------------------------------------------
+                0.00    0.00       1/1           Window::init(int, int, std::string, int, char**, std::string, int, float) [175]
+[186]    0.0    0.00    0.00       1         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [186]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [156] global constructors keyed to a (Dvector.cpp) [147] __gnu_cxx::new_allocator<double*>::new_allocator() [152] std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::~_Vector_impl()
+ [157] global constructors keyed to a (DvectorComplex.cpp) [148] __gnu_cxx::new_allocator<double*>::~new_allocator() [102] std::_Vector_base<double*, std::allocator<double*> >::_M_deallocate(double**, unsigned long)
+ [158] global constructors keyed to a (Height.cpp) [120] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocate(unsigned long, void const*) [83] std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator()
+ [159] global constructors keyed to a (WaveModel.cpp) [178] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::new_allocator() [153] std::_Vector_base<double*, std::allocator<double*> >::_Vector_base()
+ [160] global constructors keyed to a (GerstnerWave.cpp) [121] __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::construct(std::pair<Camera::DIR const, int>*, std::pair<Camera::DIR const, int> const&) [154] std::_Vector_base<double*, std::allocator<double*> >::~_Vector_base()
+ [161] global constructors keyed to a (GerstnerWaveModel.cpp) [122] __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::new_allocator() [43] std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*)
+ [162] global constructors keyed to a (PhilipsWaveModel.cpp) [123] __gnu_cxx::new_allocator<std::pair<Camera::DIR const, int> >::~new_allocator() [90] double** std::__uninitialized_copy<true>::__uninit_copy<double**, double**>(double**, double**, double**)
+ [163] global constructors keyed to a (main.cxx) [85] __gnu_cxx::__alloc_traits<std::allocator<double*> >::max_size(std::allocator<double*> const&) [131] std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&)
+ [164] global constructors keyed to a (camera.cxx) [81] void __gnu_cxx::__alloc_traits<std::allocator<double*> >::construct<double*>(std::allocator<double*>&, double**, double* const&) [50] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&)
+ [165] global constructors keyed to a (Ocean.cxx) [86] __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::__normal_iterator(double** const&) [51] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end()
+ [166] global constructors keyed to a (window.cxx) [108] __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::difference_type __gnu_cxx::operator-<double**, std::vector<double*, std::allocator<double*> > >(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&, __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > > const&) [132] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::insert(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&)
+  [10] dot(Dvector const&, Dvector const&) [24] DvectorComplex::get_Im(int) const [180] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::map()
+   [5] fft(DvectorComplex&)   [25] DvectorComplex::get_Real(int) const [52] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::operator[](Camera::DIR const&)
+   [6] ifft(DvectorComplex&)  [64] PhilipsWaveModel::display(std::ostream&) const [133] std::pair<Camera::DIR const, int>::pair(Camera::DIR const&, int const&)
+   [9] square(double)         [13] Ocean::gl_VertexArrayX(int, double*) const [134] std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&)
+ [141] GerstnerWave::GerstnerWave(double, double, double, Dvector) [14] Ocean::gl_VertexArrayY(int, double*) const [111] std::vector<double*, std::allocator<double*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >, double* const&)
+ [142] GerstnerWave::GerstnerWave() [97] Ocean::init_gl_VertexArrayX(int, double*) const [112] std::vector<double*, std::allocator<double*> >::end()
+ [143] GerstnerWave::~GerstnerWave() [98] Ocean::init_gl_VertexArrayY(int, double*) const [113] std::vector<double*, std::allocator<double*> >::begin()
+ [144] GerstnerWave::operator=(GerstnerWave const&) [33] Ocean::getNx() const [82] std::vector<double*, std::allocator<double*> >::push_back(double* const&)
+  [29] DvectorComplex::cp_val(int, int, DvectorComplex const&) [35] Ocean::getNy() const [38] std::vector<double*, std::allocator<double*> >::operator[](unsigned long)
+  [31] DvectorComplex::getDim() [58] Ocean::get_lx() const [135] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<Camera::DIR const, int> const&)
+  [26] DvectorComplex::set_Im(int, double) [59] Ocean::get_ly() const [136] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_node()
+  [28] DvectorComplex::set_Real(int, double) [15] Ocean::display(std::ostream&) const [53] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::lower_bound(Camera::DIR const&)
+   [7] DvectorComplex::DvectorComplex(int, double, double) [74] Ocean::get_time() const [116] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_rightmost()
+  [32] DvectorComplex::~DvectorComplex() [60] Height::getL_x() const [181] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_M_initialize()
+   [3] PhilipsWaveModel::computeModel(Height&, int, int, double, double, double) [61] Height::getL_y() const [182] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree_impl<std::less<Camera::DIR>, false>::_Rb_tree_impl()
+ [167] PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double) [34] Height::getn_x() const [137] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_create_node(std::pair<Camera::DIR const, int> const&)
+ [168] GerstnerWaveModel::GerstnerWaveModel(Dvector, GerstnerWave*, unsigned long) [36] Height::getn_y() const [54] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, std::_Rb_tree_node<std::pair<Camera::DIR const, int> >*, Camera::DIR const&)
+   [4] Ocean::main_computation() [16] Height::display(std::ostream&) const [138] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_insert_unique_(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, std::pair<Camera::DIR const, int> const&)
+ [169] Ocean::Ocean(Height&, WaveModel&, double, double) [12] Height::operator()(int, int) const [183] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_unique_pos(Camera::DIR const&)
+ [170] Camera::setKeyboard(int, bool) [11] Dvector::norm() const [139] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >, Camera::DIR const&)
+  [65] Camera::translation()  [27] Dvector::size() const  [55] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::end()
+  [66] Camera::getX()          [8] Dvector::operator()(int) const [184] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::begin()
+  [67] Camera::getY()         [84] __gnu_cxx::new_allocator<double*>::max_size() const [46] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_end()
+  [68] Camera::getZ()        [124] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::max_size() const [41] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*)
+ [100] Camera::rotation(int, int) [77] __gnu_cxx::__normal_iterator<double**, std::vector<double*, std::allocator<double*> > >::base() const [117] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_key(std::_Rb_tree_node_base const*)
+  [69] Camera::getSightX()    [40] std::_Select1st<std::pair<Camera::DIR const, int> >::operator()(std::pair<Camera::DIR const, int> const&) const [45] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_left(std::_Rb_tree_node_base*)
+  [70] Camera::getSightY()    [87] std::_Vector_base<double*, std::allocator<double*> >::_M_get_Tp_allocator() const [48] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_begin()
+  [71] Camera::getSightZ()    [44] std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator*() const [49] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_right(std::_Rb_tree_node_base*)
+ [171] Camera::Camera(Camera::KEYBOARD, float, float, float, float, float, float, float, int, int) [47] std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> >::operator==(std::_Rb_tree_iterator<std::pair<Camera::DIR const, int> > const&) const [42] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node<std::pair<Camera::DIR const, int> > const*)
+ [172] Height::Height(double, double, int, int, double) [125] std::_Rb_tree_const_iterator<std::pair<Camera::DIR const, int> >::_M_const_cast() const [118] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_S_value(std::_Rb_tree_node_base const*)
+ [173] Height::Height()       [56] std::map<Camera::DIR, int, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [185] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_Rb_tree()
+ [174] Height::operator=(Height const&) [39] std::less<Camera::DIR>::operator()(Camera::DIR const&, Camera::DIR const&) const [140] std::pair<Camera::DIR const, int>* std::__addressof<std::pair<Camera::DIR const, int> >(std::pair<Camera::DIR const, int>&)
+   [1] Window::draw_ocean()  [109] std::vector<double*, std::allocator<double*> >::_M_check_len(unsigned long, char const*) const [79] std::_Miter_base<double**>::iterator_type std::__miter_base<double**>(double**)
+ [119] Window::fps_action()   [78] std::vector<double*, std::allocator<double*> >::size() const [76] std::_Niter_base<double**>::iterator_type std::__niter_base<double**>(double**)
+ [175] Window::init(int, int, std::string, int, char**, std::string, int, float) [88] std::vector<double*, std::allocator<double*> >::max_size() const [91] double** std::__copy_move_a<false, double**, double**>(double**, double**, double**)
+ [176] Window::launch()      [126] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::get_allocator() const [92] double** std::__copy_move_a2<false, double**, double**>(double**, double**, double**)
+  [72] Window::draw_fps()    [127] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::_M_get_Node_allocator() const [93] double** std::uninitialized_copy<double**, double**>(double**, double**, double**)
+  [73] Dvector::fillNormal() [128] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::size() const [94] double** std::__uninitialized_copy_a<double**, double**, double*>(double**, double**, double**, std::allocator<double*>&)
+ [105] Dvector::Dvector(Dvector const&) [57] std::_Rb_tree<Camera::DIR, std::pair<Camera::DIR const, int>, std::_Select1st<std::pair<Camera::DIR const, int> >, std::less<Camera::DIR>, std::allocator<std::pair<Camera::DIR const, int> > >::key_comp() const [95] double** std::__uninitialized_move_if_noexcept_a<double**, double**, std::allocator<double*> >(double**, double**, double**, std::allocator<double*>&)
+  [63] Dvector::Dvector(int) [149] std::allocator<double*>::allocator() [114] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [145] Dvector::Dvector(int, double) [150] std::allocator<double*>::~allocator() [37] _ZSt3powIiiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_
+ [115] Dvector::Dvector()    [179] std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >::allocator() [155] std::pow(double, int)
+  [62] Dvector::~Dvector()   [129] std::allocator<std::pair<Camera::DIR const, int> >::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > >(std::allocator<std::_Rb_tree_node<std::pair<Camera::DIR const, int> > > const&) [96] double** std::copy<double**, double**>(double**, double**, double**)
+  [99] Dvector::operator=(Dvector const&) [130] std::allocator<std::pair<Camera::DIR const, int> >::~allocator() [30] _ZSt4sqrtIiEN9__gnu_cxx11__enable_ifIXsr12__is_integerIT_EE7__valueEdE6__typeES2_
+ [146] WaveModel::WaveModel(Dvector) [75] std::_Iter_base<double**, false>::_S_base(double**) [103] void std::_Destroy<double**>(double**, double**)
+ [177] WaveModel::operator=(WaveModel const&) [89] double** std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double*>(double* const*, double* const*, double**) [104] void std::_Destroy<double**, double*>(double**, double**, std::allocator<double*>&)
+ [106] __gnu_cxx::new_allocator<double*>::deallocate(double**, unsigned long) [101] void std::_Destroy_aux<true>::__destroy<double**>(double**, double**) [186] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+ [107] __gnu_cxx::new_allocator<double*>::allocate(unsigned long, void const*) [110] std::_Vector_base<double*, std::allocator<double*> >::_M_allocate(unsigned long)
+  [80] __gnu_cxx::new_allocator<double*>::construct(double**, double* const&) [151] std::_Vector_base<double*, std::allocator<double*> >::_Vector_impl::_Vector_impl()

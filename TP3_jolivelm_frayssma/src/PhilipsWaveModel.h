@@ -25,8 +25,10 @@ class PhilipsWaveModel : public WaveModel
     public:
         PhilipsWaveModel();
         PhilipsWaveModel(Dvector Wind, double Constant, double speed);
-        void computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val);
-        void display(ostream& str) const;
+
+        virtual ~PhilipsWaveModel();
+        virtual void computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val);
+        virtual void display(ostream& str) const;
 };
 
 void fft(DvectorComplex & x, size_t n);

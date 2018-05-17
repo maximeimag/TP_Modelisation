@@ -20,6 +20,9 @@ WaveModel::~WaveModel() {
     return;
 }
 
+void WaveModel::computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val) {    
+}
+
 WaveModel::WaveModel(Dvector WindDirection_init) {
     this->WindDirection = Dvector(WindDirection_init);
 }

@@ -27,21 +27,19 @@ int main(int argc, char** argv) {
     double time_skip = 0.2;
 
     /** @todo Initialiser du modèle*/
-    /*
     GerstnerWave listeGerstner[3];
     listeGerstner[0] = GerstnerWave(1.0, 1.0, 1.0, Wind);
     listeGerstner[1] = GerstnerWave(1.0, 1.0, 1.0, Wind);
     listeGerstner[2] = GerstnerWave(1.0, 1.0, 1.0, Wind);
 
     GerstnerWaveModel Gw = GerstnerWaveModel(Wind, listeGerstner, 3);
-    */
+
     PhilipsWaveModel Pw = PhilipsWaveModel(Wind, ModelConstant, WindSpeed);
 
     /** @todo Initialiser du champ de hauteur */
     Height HeightField = Height(lx, ly, nx, ny, 0);
 
     /** @todo Initialiser de l'océan */
-    //Ocean ocean_model = Ocean(HeightField, Gw, time_skip, time_val);
     Ocean ocean_model = Ocean(HeightField, Pw, time_skip, time_val);
     ocean = &ocean_model;
 

@@ -7,7 +7,7 @@
 #include "Ocean.hxx"
 using namespace std;
 
-Ocean::Ocean(Height & HeightField, PhilipsWaveModel & Model, double init_time_skip, double init_time_val) {
+Ocean::Ocean(Height & HeightField, WaveModel & Model, double init_time_skip, double init_time_val) :Model(Model){
     this->HeightField = HeightField;
     this->Model = Model;
     this->time_skip = init_time_skip;

@@ -21,13 +21,15 @@ class WaveModel
     public:
         WaveModel();
         WaveModel(Dvector Wind);
-        ~WaveModel();
+        virtual ~WaveModel();
 
         WaveModel & operator=(const WaveModel &WvM);
 
         Dvector getWind() {return WindDirection;}
 
-        void display(ostream& str) const;
+        virtual void computeModel(Height &HeightField, int nx, int ny, double lx, double ly, double time_val);
+
+        virtual void display(ostream& str) const;
 };
 
 #endif
